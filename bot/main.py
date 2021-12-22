@@ -62,4 +62,13 @@ async def on_message(message):
     if message.content.startswith('Haiku will love you no worries meme'):
         await message.channel.send('NO! beep boop beep boop :( <3')
         
+    if message.content.startswith('pls somebody love me, for fucks sake why does nobody love me!'):
+        await message.channel.send('sorry meme :( we all love you here!!! <3')     
+        
+    if message.content.startswith('pls wink'):
+        await message.channel.send('https://tenor.com/bNyLU.gif') 
+        
+    if message.content.startswith('pls youtube'):
+       await message.channel.send('https://www.youtube.com/')
+    
 client.run(os.getenv("DISCORD_TOKEN"))
