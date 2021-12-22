@@ -34,4 +34,21 @@ async def on_message(message):
    
     if message.content.startswith('pls codenames'):
         await message.channel.send('https://codenames.game/')  
+
+    if message.content.startswith('pls gartic phone'):
+        await message.channel.send('https://garticphone.com/') 
+
+    if message.content.startswith('pls secret hitler '):
+        await message.channel.send('https://secrethitler.io/')
+
+    if message.content.startswith('pls uno'):
+        await message.channel.send('https://www.letsplayuno.com/')           
+    if message.content.startswith('pls scrabble'):
+        await message.channel.send('https://www.pogo.com/games/scrabble/play') 
+
+    if message.content.startswith('pls skribbl'):
+        await message.channel.send('https://skribbl.io/')  
+    
+    if message.content.startswith('pls heart'):
+        await message.channel.send('https://tenor.com/bNJH7.gif')   
 client.run(os.getenv("DISCORD_TOKEN"))
