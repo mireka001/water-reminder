@@ -50,5 +50,5 @@ async def on_message(message):
         await message.channel.send('https://skribbl.io/')  
     
     if message.content.startswith('pls heart'):
-        await message.channel.send('https://tenor.com/bNJH7.gif')   
+        await message.channel.send('https://tenor.com/view/moti-hearts-gif-20367288')   
 client.run(os.getenv("DISCORD_TOKEN"))
