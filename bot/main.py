@@ -50,5 +50,16 @@ async def on_message(message):
         await message.channel.send('https://skribbl.io/')  
     
     if message.content.startswith('pls heart'):
-        await message.channel.send('https://tenor.com/view/moti-hearts-gif-20367288')   
+        await message.channel.send('https://tenor.com/view/moti-hearts-gif-20367288') 
+        
+    if message.content.startswith('pls narwhale'):
+        await message.channel.send('http://narwhale.io/')
+       
+    
+    if message.content.startswith('pls somebody love me, for fucks sake why does nobody love me!'):
+        await message.channel.send('sorry meme :( we all love you here!!! <3')     
+        
+    if message.content.startswith('Haiku will love you no worries meme'):
+        await message.channel.send('NO! i as a bot loves you most')
+        
 client.run(os.getenv("DISCORD_TOKEN"))
