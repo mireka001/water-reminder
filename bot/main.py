@@ -108,6 +108,12 @@ async def on_message(message):
        await message.channel.send('plz drink some water <3 <@&906298179476135936> https://tenor.com/bnNG6.gif')    
     if message.content.lower().strip().startswith('.m food reminder'):
        await message.channel.send('plz eat some food <3 <@&906298179476135936> https://tenor.com/bLtpk.gif') 
+
+    if message.content.lower().strip().startswith('.m babies reminder <3'):
+       await message.channel.send('plz remember to drink some water <3 you deserve it.  <@901321594763350097> https://tenor.com/bnNG6.gif')    
+    if message.content.lower().strip().startswith('.m snacko reminder <3 '):
+       await message.channel.send('plz remember to eat some food <3 you need it. <@901321594763350097> https://tenor.com/bLtpk.gif') 
+    
     if message.content.lower().strip().startswith('.m cockroach calisthenics'):
        await message.channel.send('https://youtu.be/KqNrAOrReNg')
 
