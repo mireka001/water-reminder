@@ -60,6 +60,6 @@ async def on_message(message):
         await message.channel.send('sorry meme :( we all love you here!!! <3')     
         
     if message.content.startswith('Haiku will love you no worries meme'):
-        await message.channel.send('NO! i as a bot loves you most')
+        await message.channel.send('NO! beep boop beep boop :( <3')
         
 client.run(os.getenv("DISCORD_TOKEN"))
