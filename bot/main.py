@@ -38,7 +38,7 @@ async def on_message(message):
     if message.content.startswith('pls gartic phone'):
         await message.channel.send('https://garticphone.com/') 
 
-    if message.content.startswith('pls secret hitler '):
+    if message.content.startswith('pls secret hitler'):
         await message.channel.send('https://secrethitler.io/')
 
     if message.content.startswith('pls uno'):
