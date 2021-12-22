@@ -110,9 +110,9 @@ async def on_message(message):
        await message.channel.send('plz eat some food <3 <@&906298179476135936> https://tenor.com/bLtpk.gif') 
 
     if message.content.lower().strip().startswith('.m babies reminder <3'):
-       await message.channel.send('plz remember to drink some water <3 you deserve it.  <@901321594763350097> https://tenor.com/bnNG6.gif')    
-    if message.content.lower().strip().startswith('.m snacko reminder <3 '):
-       await message.channel.send('plz remember to eat some food <3 you need it. <@901321594763350097> https://tenor.com/bLtpk.gif') 
+       await message.channel.send('plz remember to drink some water <3 you deserve it. <@&901321594763350097> https://tenor.com/bnNG6.gif')    
+    if message.content.lower().strip().startswith('.m snacko reminder <3'):
+       await message.channel.send('plz remember to eat some food <3 you need it. <@&901321594763350097> https://tenor.com/bLtpk.gif') 
     
     if message.content.lower().strip().startswith('.m cockroach calisthenics'):
        await message.channel.send('https://youtu.be/KqNrAOrReNg')
@@ -154,4 +154,5 @@ async def on_message(message):
        await message.channel.send('https://discord.com/login?redirect_to=%2Fdevelopers')    
     if message.content.lower().strip().startswith('.m help'):
        await message.channel.send('Vocal response commands; \n\n.m hello \n.m hugs \n.m i love you \n.m kissy \n.m handshake \n.m wave\n.m ick \n.m i hate you\n.m hugs \n.m loser\n.m wow \n.m shocked \n.m lmao\n.m sad \n.m water reminder \n.m food reminder\n.m cockroach calisthenics\n.m cockroach\n\nGame commands;\n.m codenames\n.m gartic phone \n.m secret hitler\n.m uno\n.m scrabble\n.m skribbl \n.m narwhale\n.m happy wheels \n.m checkers\n.m chess\n.m geoguessr\n\nPlatform commands;\n.m youtube\n.m spotify \n.m apple music\n.m twitter\n.m reddit\n.m instagram\n.m WhatsApp web \n.m amazon\n.m cashapp \n.m facebook\n.m life360 \n.m google\n.m discord developer\n.m discord\n\nBot commands;\n.m help')
+
 client.run(os.getenv("DISCORD_TOKEN"))
