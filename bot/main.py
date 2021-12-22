@@ -80,23 +80,38 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.m ick'):
        await message.channel.send('https://tenor.com/7w1S.gif')    
     if message.content.lower().strip().startswith('.m loser'):
-       await message.channel.send('https://tenor.com/bgdt3.gif')    
+       await message.channel.send('https://tenor.com/bgdt3.gif') 
+
+
+    if message.content.lower().strip().startswith('.shocked'):
+       await message.channel.send('https://media.giphy.com/media/3o7TKFq4jy3JeWyn8A/giphy.gif')
+
+    if message.content.lower().strip().startswith('.wow'):
+       await message.channel.send('https://media.giphy.com/media/1Zt3z4uEBPZQY/giphy.gif')
+
+    if message.content.lower().strip().startswith('.apple music'):
+       await message.channel.send('https://music.apple.com/login')
+    
     if message.content.lower().strip().startswith('.m i hate you'):
-       await message.channel.send('https://tenor.com/9eCN.gif')    
+       await message.channel.send('https://tenor.com/9eCN.gif') 
+
     if message.content.lower().strip().startswith('.m sad'):
-       await message.channel.send('https://tenor.com/btf9K.gif')    
+       await message.channel.send('https://tenor.com/btf9K.gif')   
+
     if message.content.lower().strip().startswith('.m lmao'):
        await message.channel.send('https://tenor.com/bh5zk.gif')    
+
     if message.content.lower().strip().startswith('.m ew'):
        await message.channel.send('https://tenor.com/4lKJ.gif')    
+
     if message.content.lower().strip().startswith('.m water reminder'):
-       await message.channel.send('plz drink some water <3 @m\'s babies https://tenor.com/bnNG6.gif')    
+       await message.channel.send('plz drink some water <3 <@&906298179476135936> https://tenor.com/bnNG6.gif')    
     if message.content.lower().strip().startswith('.m food reminder'):
-       await message.channel.send('plz eat some food <3 @m\'s babies https://tenor.com/bLtpk.gif') 
+       await message.channel.send('plz eat some food <3 <@&906298179476135936> https://tenor.com/bLtpk.gif') 
     if message.content.lower().strip().startswith('.m cockroach calisthenics'):
        await message.channel.send('https://youtu.be/KqNrAOrReNg')
 
-    if message.content.lower().strip().startswith('.m cockroach'):
+    if message.content.lower().strip().startswith('.m roach'):
        await message.channel.send('https://tenor.com/992S.gif')  
 
     if message.content.lower().strip().startswith('.m happy wheels'):
@@ -133,5 +148,3 @@ async def on_message(message):
        await message.channel.send('https://discord.com/login?redirect_to=%2Fdevelopers')    
     if message.content.lower().strip().startswith('.m help'):
        await message.channel.send('Vocal response commands; \n\n.m hello \n.m hugs \n.m i love you \n.m kissy \n.m handshake \n.m wave\n.m ick \n.m i hate you\n.m hugs \n.m loser\n.m wow \n.m shocked \n.m lmao\n.m sad \n.m water reminder \n.m food reminder\n.m cockroach calisthenics\n.m cockroach\n\nGame commands;\n.m codenames\n.m gartic phone \n.m secret hitler\n.m uno\n.m scrabble\n.m skribbl \n.m narwhale\n.m happy wheels \n.m checkers\n.m chess\n.m geoguessr\n\nPlatform commands;\n.m youtube\n.m spotify \n.m apple music\n.m twitter\n.m reddit\n.m instagram\n.m WhatsApp web \n.m amazon\n.m cashapp \n.m facebook\n.m life360 \n.m google\n.m discord developer\n.m discord\n\nBot commands;\n.m help')
-
-client.run(os.getenv("DISCORD_TOKEN"))
