@@ -5,7 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+ await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="playing with yarn")) 
 
 @client.event
 async def on_message(message):
@@ -110,9 +110,10 @@ async def on_message(message):
        await message.channel.send('plz eat some food <3 <@&906298179476135936> https://tenor.com/bLtpk.gif') 
 
     if message.content.lower().strip().startswith('.m babies reminder <3'):
-       await message.channel.send('plz remember to drink some water <3 you deserve it. <@&901321594763350097> https://tenor.com/bnNG6.gif')    
+       await message.channel.send('plz remember to drink some water <3 you deserve it. <@&924902936918777856> https://media4.giphy.com/media/iIdijgFZtkssLeoJmO/giphy.gif?cid=ecf05e47fnjtmog11unkif27qinvkkhq99qymcncxdcm36b3&rid=giphy.gif')   
+
     if message.content.lower().strip().startswith('.m snacko reminder <3'):
-       await message.channel.send('plz remember to eat some food <3 you need it. <@&901321594763350097> https://tenor.com/bLtpk.gif') 
+       await message.channel.send('plz remember to eat some food <3 you need it. <@&924902936918777856> https://i.pinimg.com/originals/2d/62/74/2d6274213eb306e8852347482da1310b.gif') 
     
     if message.content.lower().strip().startswith('.m cockroach calisthenics'):
        await message.channel.send('https://youtu.be/KqNrAOrReNg')
