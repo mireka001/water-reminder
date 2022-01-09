@@ -13,12 +13,19 @@ async def on_message(message):
         return
 
     if message.content.lower().strip().startswith('.m hello'):
-        await message.channel.send('hi hi! https://tenor.com/7MVe.gif')
+        await message.channel.send('hi hi! https://media4.giphy.com/media/lrtPCNjE8Rdoky43VR/200.gif')
 
 
     if message.author == client.user:
         return
 
+    if message.content.lower().strip().startswith('.m welcome'):
+        await message.channel.send('welcome! https://thumbs.gfycat.com/GrimyBetterAdder-max-1mb.gif')
+
+
+    if message.author == client.user:
+        return
+     
     if message.content.lower().strip().startswith('.m i love you'):
         await message.channel.send('i love you too https://tenor.com/WeeS.gif')
 
