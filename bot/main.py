@@ -5,7 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
- await client.change_presence(activity=discord.Streaming(name="oncle jazz", url=https://open.spotify.com/album/4W4gNYa4tt3t8V6FmONWEK))
+ await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="oncle jazz"))
 
 @client.event
 async def on_message(message):
