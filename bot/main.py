@@ -5,7 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
- await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="playing with yarn")) 
+ await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="oncle jazz")) 
 
 @client.event
 async def on_message(message):
@@ -159,8 +159,8 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.m discord'):
        await message.channel.send('https://discord.com/login')    
     if message.content.lower().strip().startswith('.m discord developer'):
-       await message.channel.send('https://discord.com/login?redirect_to=%2Fdevelopers')    
+       await message.channel.send('https://discord.com/developers/docs/intro')    
     if message.content.lower().strip().startswith('.m help'):
-       await message.channel.send('Vocal response commands; \n\n.m hello \n.m hugs \n.m i love you \n.m kissy \n.m handshake \n.m wave\n.m ick \n.m i hate you\n.m hugs \n.m loser\n.m wow \n.m shocked \n.m lmao\n.m sad \n.m water reminder \n.m food reminder\n.m cockroach calisthenics\n.m cockroach\n\nGame commands;\n.m codenames\n.m gartic phone \n.m secret hitler\n.m uno\n.m scrabble\n.m skribbl \n.m narwhale\n.m happy wheels \n.m checkers\n.m chess\n.m geoguessr\n\nPlatform commands;\n.m youtube\n.m spotify \n.m apple music\n.m twitter\n.m reddit\n.m instagram\n.m WhatsApp web \n.m amazon\n.m cashapp \n.m facebook\n.m life360 \n.m google\n.m discord developer\n.m discord\n\nBot commands;\n.m help')
+       await message.channel.send('Vocal response commands; \n\n.m hello \n.m hugs \n.m i love you \n.m kissy \n.m handshake \n.m wave\n.m ick \n.m i hate you\n.m hugs \n.m loser\n.m wow \n.m shocked \n.m lmao\n.m sad \n.m water reminder \n.m food reminder\n.m roach calisthenics\n.m cockroach\n\nGame commands;\n.m codenames\n.m gartic phone \n.m secret hitler\n.m uno\n.m scrabble\n.m skribbl \n.m narwhale\n.m happy wheels \n.m checkers\n.m chess\n.m geoguessr\n\nPlatform commands;\n.m youtube\n.m spotify \n.m apple music\n.m twitter\n.m reddit\n.m instagram\n.m WhatsApp web \n.m amazon\n.m cashapp \n.m facebook\n.m life360 \n.m google\n.m discord developer\n.m discord\n\nBot commands;\n.m help')
 
 client.run(os.getenv("DISCORD_TOKEN"))
