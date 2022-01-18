@@ -5,7 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-await client.change_presence(activity=discord.Game(name="Sugar - Men I Trust"))
+ await client.change_presence(activity=discord.Game(name="Sugar - Men I Trust"))
 
 @client.event
 async def on_message(message):
