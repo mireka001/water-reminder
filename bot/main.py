@@ -88,4 +88,8 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('.m roach'):
        await message.channel.send('https://tenor.com/992S.gif')  
+
+    if message.content.lower().strip().startswith('.ian'):
+       await message.channel.send('https://twitch.tv/ianxian') 
+
 client.run(os.getenv("DISCORD_TOKEN"))
