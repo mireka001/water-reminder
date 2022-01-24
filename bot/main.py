@@ -108,7 +108,7 @@ async def on_message(message):
 
 
     if message.content.lower().strip().startswith('.ad'):
-       await message.channel.send('*The Men I Trust Discord* 
+       await message.channel.send('*The Men I Trust Discord*' 
       'Our community is the largest supporting discord in regards to the Indie Band "Men I Trust." We have an extremely welcoming community, where **everyone** is welcome! Come check us out! We love you, A Lot. https://discord.gg/menitrust https://tinyurl.com/2fska59c') 
 
 
