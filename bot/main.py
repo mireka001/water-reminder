@@ -38,12 +38,13 @@ async def on_message(message):
      
     if message.content.lower().strip().startswith('.m kissy'):
         await message.channel.send('https://media.giphy.com/media/iJDthUh1cvaF2/giphy.gif')
+
    
-    if message.content.lower().strip().startswith('.m somebody love me, for fucks sake why does nobody love me!'):
-        await message.channel.send('sorry meme :( we all love you here!!! <3') 
+    if message.content.lower().strip().startswith('.m  somebody love me, for fucks sake why does nobody love me!'):
+        await message.channel.send('sorry <@324054566595198976> :( we all love you here!!! <3') 
         
     if message.content.lower().strip().startswith('.m meme'):
-        await message.channel.send('we all love you here meme!!! <3')     
+        await message.channel.send('we all love you here <@324054566595198976>!!! <3')     
         
     if message.content.lower().strip().startswith('.m wink'):
         await message.channel.send('https://tenor.com/bNyLU.gif') 
