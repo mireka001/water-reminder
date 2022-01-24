@@ -108,7 +108,7 @@ async def on_message(message):
 
 
     if message.content.lower().strip().startswith('.ad'):
-       await message.channel.send('The Men I Trust Discord is a server dedicated to the indie band "Men I Trust." \\nWe have an extremely welcoming community, where **everyone** is welcome! \\nCome check us out! We love you, A Lot. \\nhttps://discord.gg/menitrust \\nhttps://tinyurl.com/2fska59c') 
+       await message.channel.send('The Men I Trust Discord is a server dedicated to the indie band "Men I Trust." \n\nWe have an extremely welcoming community, where **everyone** is welcome! \n\nCome check us out! We love you, A Lot. \n\nnhttps://discord.gg/menitrust \n\nhttps://tinyurl.com/2fska59c') 
 
 
 client.run(os.getenv("DISCORD_TOKEN"))
