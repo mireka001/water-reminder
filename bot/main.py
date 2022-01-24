@@ -90,6 +90,6 @@ async def on_message(message):
        await message.channel.send('https://tenor.com/992S.gif')  
 
     if message.content.lower().strip().startswith('.ian'):
-       await message.channel.send('check out <@&429723963157905410>\'s stream! https://twitch.tv/ianxian') 
+       await message.channel.send('check out <@429723963157905410>\'s stream! https://twitch.tv/ianxian') 
 
 client.run(os.getenv("DISCORD_TOKEN"))
