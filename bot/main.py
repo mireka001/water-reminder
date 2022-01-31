@@ -22,7 +22,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.m proulx hairflip'):
        await message.channel.send('https://tenor.com/9POk.gif')
   
- if message.content.lower().strip().startswith('.m jammin'):
+    if message.content.lower().strip().startswith('.m jammin'):
        await message.channel.send('https://tenor.com/9POs.gif')
 
     if message.content.lower().strip().startswith('.reddit'):
