@@ -11,10 +11,12 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+
+
  
 #Men I Trust Commands:
 
-    if message.content.lower().strip().startswith('.m emma'):
+    if message.content.lower().strip().startswith('.m emma proulx'):
        await message.channel.send('https://tenor.com/bMe4t.gif')
 
     if message.content.lower().strip().startswith('.m proulx hairflip'):
@@ -22,12 +24,6 @@ async def on_message(message):
   
  if message.content.lower().strip().startswith('.m jammin'):
        await message.channel.send('https://tenor.com/9POs.gif')
-
-    if message.content.lower().strip().startswith('.ian'):
-       await message.channel.send('check out <@429723963157905410>\'s stream! https://twitch.tv/ianxian') 
-
-    if message.content.lower().strip().startswith('.benji'):
-       await message.channel.send('check out <@695788578596192286>\'s stream! https://twitch.tv/notbenja20') 
 
     if message.content.lower().strip().startswith('.reddit'):
        await message.channel.send('https://www.reddit.com/r/menitrust/') 
@@ -37,7 +33,6 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('.ad'):
        await message.channel.send('The Men I Trust Discord is a server dedicated to the indie band "Men I Trust." \n\nWe have an extremely welcoming community, where **everyone** is welcome! \n\nCome check us out! We love you, A Lot. \n\nhttps://discord.gg/menitrust \n\nhttps://tinyurl.com/2fska59c')
-
 
     if message.content.lower().strip().startswith('.youtube'):
        await message.channel.send('https://www.youtube.com/channel/UCOzZL8Sd8V8yFGWqOHnVqFA') 
@@ -62,6 +57,11 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.pandora'):
        await message.channel.send('https://www.pandora.com/station/play/110003941483222834') 
 
+    if message.content.lower().strip().startswith('.Oncle Jazz commands'):
+       await message.channel.send('Commands: /n/n.m emma /n/n.m proulx hairflip /n/n.m jammin /n/n.reddit /n/n.tumblr /n/n.youtube /n/n/.youtube music /n/n.spotify /n/n.apple music /n/n.iheartradio /n/n.pandora /n/n.ad /n/n.m message to meme /n/n.m meme /n/n.ian /n/n.benji') 
+
+
+
  #Personal Server Commands:
   
     if message.content.lower().strip().startswith('.m message to meme'):
@@ -69,7 +69,15 @@ async def on_message(message):
 
         
     if message.content.lower().strip().startswith('.m meme'):
-        await message.channel.send('we all love you here <@324054566595198976>!!! <3')   
+        await message.channel.send('we all love you here <@324054566595198976>!!! <3') 
+  
+    if message.content.lower().strip().startswith('.ian'):
+       await message.channel.send('check out <@429723963157905410>\'s stream! <3 https://twitch.tv/ianxian') 
+
+    if message.content.lower().strip().startswith('.benji'):
+       await message.channel.send('check out <@695788578596192286>\'s stream! <3 https://twitch.tv/notbenja20') 
+
+
 
 
 client.run(os.getenv("DISCORD_TOKEN"))
