@@ -58,7 +58,7 @@ async def on_message(message):
        await message.channel.send('https://www.pandora.com/station/play/110003941483222834') 
 
     if message.content.lower().strip().startswith('.oncle'):
-       await message.channel.send('Oncle Jazz Commands: <a:burst1:934223774734237796>.m emma \n\n<a:burst1:934223774734237796>.m proulx hairflip \n\n<a:burst1:934223774734237796>.m jammin \n\n<a:burst1:934223774734237796>.reddit \n\n<a:burst1:934223774734237796>.tumblr \n\n<a:burst1:934223774734237796>.youtube \n\n<a:burst1:934223774734237796>.youtube music \n\n<a:burst1:934223774734237796>.spotify \n\n<a:burst1:934223774734237796>.apple music \n\n<a:burst1:934223774734237796>.iheartradio \n\n<a:burst1:934223774734237796>.pandora \n\n<a:burst1:934223774734237796>.ad \n\n<a:burst1:934223774734237796>.m message to meme \n\n<a:burst1:934223774734237796>.m meme \n\n<a:burst1:934223774734237796>.ian \n\n<a:burst1:934223774734237796>.benji') 
+       await message.channel.send('Oncle Jazz Commands: \n\n<a:burst1:934223774734237796> .m emma \n\n<a:burst1:934223774734237796> .m proulx hairflip \n\n<a:burst1:934223774734237796> .m jammin \n\n<a:burst1:934223774734237796> .reddit \n\n<a:burst1:934223774734237796> .tumblr \n\n<a:burst1:934223774734237796> .youtube \n\n<a:burst1:934223774734237796> .youtube music \n\n<a:burst1:934223774734237796> .spotify \n\n<a:burst1:934223774734237796> .apple music \n\n<a:burst1:934223774734237796> .iheartradio \n\n<a:burst1:934223774734237796> .pandora \n\n<a:burst1:934223774734237796> .ad \n\n<a:burst1:934223774734237796> .m message to meme \n\n<a:burst1:934223774734237796> .m meme \n\n<a:burst1:934223774734237796> .ian \n\n<a:burst1:934223774734237796> .benji') 
 
 
 
