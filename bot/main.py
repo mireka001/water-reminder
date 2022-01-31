@@ -57,7 +57,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.pandora'):
        await message.channel.send('https://www.pandora.com/station/play/110003941483222834') 
 
-    if message.content.lower().strip().startswith('.Oncle Jazz commands'):
+    if message.content.lower().strip().startswith('Oncle commands'):
        await message.channel.send('Commands: /n/n.m emma /n/n.m proulx hairflip /n/n.m jammin /n/n.reddit /n/n.tumblr /n/n.youtube /n/n/.youtube music /n/n.spotify /n/n.apple music /n/n.iheartradio /n/n.pandora /n/n.ad /n/n.m message to meme /n/n.m meme /n/n.ian /n/n.benji') 
 
 
