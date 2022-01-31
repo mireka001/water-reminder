@@ -38,6 +38,30 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.ad'):
        await message.channel.send('The Men I Trust Discord is a server dedicated to the indie band "Men I Trust." \n\nWe have an extremely welcoming community, where **everyone** is welcome! \n\nCome check us out! We love you, A Lot. \n\nhttps://discord.gg/menitrust \n\nhttps://tinyurl.com/2fska59c')
 
+
+    if message.content.lower().strip().startswith('.youtube'):
+       await message.channel.send('https://www.youtube.com/channel/UCOzZL8Sd8V8yFGWqOHnVqFA') 
+
+
+    if message.content.lower().strip().startswith('.youtube music'):
+       await message.channel.send('https://music.youtube.com/channel/UCaPOa_Tg0TThuYSVtUEXb8g') 
+
+
+    if message.content.lower().strip().startswith('.spotify'):
+       await message.channel.send('https://open.spotify.com/artist/3zmfs9cQwzJl575W1ZYXeT?autoplay=true') 
+
+
+    if message.content.lower().strip().startswith('.apple music'):
+       await message.channel.send('https://music.apple.com/us/artist/men-i-trust/886240553') 
+
+
+    if message.content.lower().strip().startswith('.iheartradio'):
+       await message.channel.send('https://www.iheart.com/artist/men-i-trust-30421840/?autoplay=true') 
+
+
+    if message.content.lower().strip().startswith('.pandora'):
+       await message.channel.send('https://www.pandora.com/station/play/110003941483222834') 
+
  #Personal Server Commands:
   
     if message.content.lower().strip().startswith('.m message to meme'):
