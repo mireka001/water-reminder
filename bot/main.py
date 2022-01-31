@@ -40,7 +40,7 @@ async def on_message(message):
         await message.channel.send('https://media.giphy.com/media/iJDthUh1cvaF2/giphy.gif')
 
    
-    if message.content.lower().strip().startswith('.m  somebody love me, for fucks sake why does nobody love me!'):
+    if message.content.lower().strip().startswith('.m message to meme'):
         await message.channel.send('sorry <@324054566595198976> :( we all love you here!!! <3') 
 
         
