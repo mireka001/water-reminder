@@ -106,6 +106,9 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.ian'):
        await message.channel.send('check out <@429723963157905410>\'s stream! https://twitch.tv/ianxian') 
 
+    if message.content.lower().strip().startswith('.benji'):
+       await message.channel.send('check out <@695788578596192286>\'s stream! https://twitch.tv/notbenja20') 
+
 
     if message.content.lower().strip().startswith('.ad'):
        await message.channel.send('The Men I Trust Discord is a server dedicated to the indie band "Men I Trust." \n\nWe have an extremely welcoming community, where **everyone** is welcome! \n\nCome check us out! We love you, A Lot. \n\nhttps://discord.gg/menitrust \n\nhttps://tinyurl.com/2fska59c') 
