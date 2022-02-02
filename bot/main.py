@@ -67,9 +67,8 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.m message to meme'):
         await message.channel.send('sorry <@324054566595198976> :( we all love you here!!! <3') 
 
-        
     if message.content.lower().strip().startswith('.m meme'):
-        await message.channel.send('we all love you here <@324054566595198976>!!! <3') 
+       await message.channel.send('we all love you here <@324054566595198976>!!! <3') 
   
     if message.content.lower().strip().startswith('.ian'):
        await message.channel.send('check out <@429723963157905410>\'s stream! <3 https://twitch.tv/ianxian') 
