@@ -37,7 +37,6 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.youtube'):
        await message.channel.send('https://www.youtube.com/channel/UCOzZL8Sd8V8yFGWqOHnVqFA') 
 
-
     if message.content.lower().strip().startswith('.youtube music'):
        await message.channel.send('https://music.youtube.com/channel/UCaPOa_Tg0TThuYSVtUEXb8g') 
 
@@ -52,7 +51,6 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('.iheartradio'):
        await message.channel.send('https://www.iheart.com/artist/men-i-trust-30421840/?autoplay=true') 
-
 
     if message.content.lower().strip().startswith('.pandora'):
        await message.channel.send('https://www.pandora.com/station/play/110003941483222834') 
