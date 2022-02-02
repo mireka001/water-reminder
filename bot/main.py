@@ -79,10 +79,6 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('.benji'):
        await message.channel.send('check out <@695788578596192286>\'s stream! <3 https://twitch.tv/notbenja20') 
-      
-    if message.content.lower().strip().startswith('.benji'):
-       await message.channel.send('check out <@695788578596192286>\'s stream! <3 https://twitch.tv/notbenja20') 
-
 
 
 client.run(os.getenv("DISCORD_TOKEN"))
