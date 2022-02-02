@@ -14,7 +14,7 @@ async def on_message(message):
 
 #Men I Trust Embed:
 
-    if message.content.lower().strip().startswith('.annoucement'):
+    if message.content.lower().strip().startswith('.announcement'):
        embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="<a:burst2:934223774759399514> this is the title name <a:burst2:934223774759399514>",value="this is where the announcement message goes, for further use of this embed.<a:mitjessescat:931059313278066749>")
        await message.channel.send(embed=embed_m)
