@@ -16,8 +16,8 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('.announcement'):
        embed_m = discord.Embed(colour=0xFF0000)
-       embed_m.add_field(name="<a:burst2:934223774759399514> this is the title name <a:burst2:934223774759399514>",
-                         value="this is where the announcement message goes, for further use of this embed.<a:mitjessescat:931059313278066749> \n\nhttps://video-images.vice.com/articles/5b913e922389110006365ddd/lede/1536245508101-Men-I-Trust-Emma-5.jpeg?crop=1xw%3A0.8432xh%3B0xw%2C0.1568xh&resize=2000%3A*")
+       embed_m.add_field(name="<a:burst2:934223774759399514> Reminder; <a:burst2:934223774759399514>",
+                         value="Please make sure to keep your personal images in the <#748642542047985734> channel. Thanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>")
        await message.channel.send(embed=embed_m)
 
  
