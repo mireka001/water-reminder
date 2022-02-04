@@ -20,6 +20,11 @@ async def on_message(message):
                          value="\n\nHi coolies; can you please drop some cool images below to use for a server icon? \n\nThanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>")
        await message.channel.send(embed=embed_m)
  
+    if message.content.lower().strip().startswith('.information'):
+       embed_m = discord.Embed(colour=0xFF0000)
+       embed_m.add_field(name="<a:burst2:934223774759399514> Server Information <a:burst2:934223774759399514>",
+                         value="\n\nNo discrimination, harrassment, or bullying.\n\nNo attacking members based on race, sexuality, gender identity, etc.\n\nBe respectful & kind.\n\nInsulting Emma Proulx, Dragos Chiriac, and Jessy Caron. This is punishable by **ban**.\n\nServer roles.\n\n<@&924340565347299369> - Owner\n\n<@&924206476149538828>\n\nCo-Owner\n\n<@&924156949401047061> - Band Members\n\n<@&749401066428170298> - Boosters\n\n<@&933175183861219399> - Given Role. ")
+       await message.channel.send(embed=embed_m)
 
 
 
