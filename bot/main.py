@@ -17,7 +17,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.announcement'):
        embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="<a:burst2:934223774759399514> Server Icon <a:burst2:934223774759399514>",
-       embed_m.set_thumbnail(url="https://cdn.discordapp.com/attachments/929581566009696267/939029805498789899/752985-removebg-preview.png") value="\n\nHi coolies; can you please drop some cool images below to use for a server icon? \n\nThanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>")
+       embed_m.set_thumbnail(url="https://cdn.discordapp.com/attachments/929581566009696267/939029805498789899/752985-removebg-preview.png"), value="\n\nHi coolies; can you please drop some cool images below to use for a server icon? \n\nThanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>")
        await message.channel.send(embed=embed_m)
  
     if message.content.lower().strip().startswith('.information'):
