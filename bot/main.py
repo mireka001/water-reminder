@@ -23,7 +23,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.information'):
        embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="<a:burst2:934223774759399514> Server Information <a:burst2:934223774759399514>",
-                         value="-\n\n<a:burst5:934223774788759592>**No discrimination, harrassment, or bullying.**\n\n<a:burst5:934223774788759592>**No attacking members based on race, sexuality, gender identity, etc.**\n\n<a:burst5:934223774788759592>**Be respectful & kind.**\n\n<a:burst5:934223774788759592>**Insulting Emma Proulx, Dragos Chiriac, and Jessy Caron. This is punishable by ban**.\n\n<a:burst5:934223774788759592>**Server roles;**\n\n<@&924340565347299369> - **Owner**\n\n<@&924206476149538828>\n\n**Co-Owner**\n\n<@&924156949401047061> - **Band Members**\n\n<@&749401066428170298> - **Boosters**\n\n<@&933175183861219399> - **Given Role.**")
+                         value="-\n\n<a:burst5:934223774788759592>**No discrimination, harrassment, or bullying.**\n\n<a:burst5:934223774788759592>**No attacking members based on race, sexuality, gender identity, etc.**\n\n<a:burst5:934223774788759592>**Be respectful & kind.**\n\n<a:burst5:934223774788759592>**Insulting Emma Proulx, Dragos Chiriac, and Jessy Caron. This is punishable by ban**.\n\n<a:burst5:934223774788759592>**Server roles;**\n\n<@&924340565347299369> - **Owner**\n\n<@&924206476149538828> - **Co-Owner**\n\n<@&924156949401047061> - **Band Members**\n\n<@&749401066428170298> - **Boosters**\n\n<@&933175183861219399> - **Given Role.**")
        await message.channel.send(embed=embed_m)
 
 
