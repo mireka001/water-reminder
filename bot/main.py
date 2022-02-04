@@ -16,10 +16,15 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('.announcement'):
        embed_m = discord.Embed(colour=0xFF0000)
+       embed_m.add_field(name="<a:burst2:934223774759399514> Server Icon <a:burst2:934223774759399514>",
+                         value="\n\n\Hi coolies; can you please drop some cool images below to use for a server icon? \n\nThanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>")
+       await message.channel.send(embed=embed_m)
+
+    if message.content.lower().strip().startswith('.info'):
+       embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="<a:burst2:934223774759399514> Reminder; <a:burst2:934223774759399514>",
                          value="Please make sure to keep your personal images in the <#748642542047985734>, and <#749086503472332830> channels. Thanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>")
        await message.channel.send(embed=embed_m)
-
  
 #Men I Trust Commands:
 
