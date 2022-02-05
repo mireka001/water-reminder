@@ -17,7 +17,7 @@ async def on_message(message):
        embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="<a:burst2:934223774759399514> Server Information <a:burst2:934223774759399514>",
                          value="-\n\n<a:burst5:934223774788759592> **No discrimination, harrassment, or bullying.**\n\n<a:burst5:934223774788759592> **No attacking members based on race, sexuality, gender identity, etc.**\n\n<a:burst5:934223774788759592> **Be respectful & kind.**\n\n<a:burst5:934223774788759592> **Insulting Emma Proulx, Dragos Chiriac, and Jessy Caron is permitted. This is punishable by ban**.\n\n<a:burst5:934223774788759592> **Roles within the server;**\n\n<@&924340565347299369> - **Owner**\n\n<@&924206476149538828> - **Co-Owner**\n\n<@&924156949401047061> - **Band Members**\n\n<@&749401066428170298> - **Boosters**\n\n<@&933175183861219399> - **Given Role.**")
-       embed_m.set_thumbnail(url="https://cdn.discordapp.com/attachments/929581566009696267/939029805498789899/752985-removebg-preview.png")
+       embed_m.set_thumbnail(url="https://images.squarespace-cdn.com/content/v1/54e1b4c1e4b0ef0a3e407bd1/1586767283721-Y9HQUO82LJC594XQA562/daisies_white_footer.gif")
        await message.channel.send(embed=embed_m)
 
 
