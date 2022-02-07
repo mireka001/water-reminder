@@ -98,7 +98,7 @@ async def on_message(message):
 
     # Personal Server Commands:
     elif message.content.lower().strip().startswith('.m message to meme'):
-        await message.channel.send('sorry <@324054566595198976> :( we all love you here!!! <3')
+       await message.channel.send('sorry <@324054566595198976> :( we all love you here!!! <3')
        time.sleep(2)
        await message.delete()
 
