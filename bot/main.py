@@ -28,6 +28,10 @@ async def on_message(message):
 # Men I Trust Commands:
 
 
+    elif message.content.lower().strip().startswith('.m reminder'):
+       await message.delete()
+       await message.channel.send('Please keep chat inside <#748642406231965868>. Thanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>')
+
     elif message.content.lower().strip().startswith('.m emma proulx'):
        await message.delete()
        await message.channel.send('https://tenor.com/bMe4t.gif')
