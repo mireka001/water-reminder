@@ -57,7 +57,7 @@ async def on_message(message):
        await message.delete()
 
     elif message.content.lower().strip().startswith('.ad'):
-       await message.channel.send('The Men I Trust Discord is a server dedicated to the indie band "Men I Trust." \n\nWe have an extremely welcoming community, where **everyone** is welcome! \n\nCome check us out! We love you, A Lot. \n\nhttps://discord.gg/menitrust \n\nhttps://tinyurl.com/2fska59c')
+       await message.channel.send('The Men I Trust Discord is a server dedicated to the indie band "Men I Trust." \n\nWe have an extremely welcoming community, where **everyone** is welcome! \n\nCome check us out! We love you, A Lot. \n\nhttps://discord.gg/Yzg3mfPhPA \n\nhttps://tinyurl.com/mtbkzjfc')
        time.sleep(2)
        await message.delete()
 
