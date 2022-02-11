@@ -26,8 +26,8 @@ async def on_message(message):
        await message.delete()
 
     # Men I Trust Commands:
-    elif message.content.lower().strip().startswith('.m reminder'):
-       await message.channel.send('Please keep chat inside <#748642406231965868>. Thanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>')
+    elif message.content.lower().strip().startswith('.reminder'):
+       await message.channel.send('Please keep the chat clean while talking inside <#748642406231965868>. Thanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>')
        time.sleep(2)
        await message.delete()
 
