@@ -117,5 +117,10 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    elif message.content.lower().strip().startswith('.minecraft link'):
+       await message.channel.send('MenITrust.aternos.me')
+       time.sleep(2)
+       await message.delete()
+
 
 client.run(os.getenv("DISCORD_TOKEN"))
