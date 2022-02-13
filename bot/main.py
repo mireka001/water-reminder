@@ -123,7 +123,7 @@ async def on_message(message):
        await message.delete()
 
     elif message.content.lower().strip().startswith('.question'):
-       await message.channel.send('"You\'re listening to Oncle Jazz"')
+       await message.channel.send('"You\'re listening to... Oncle Jazz"')
        time.sleep(2)
        await message.delete()
 
