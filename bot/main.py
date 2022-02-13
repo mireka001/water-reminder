@@ -122,5 +122,10 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    elif message.content.lower().strip().startswith('.QOTD'):
+       await message.channel.send('"You\'re listening to Oncle Jazz"')
+       time.sleep(1)
+       await message.delete()
+
 
 client.run(os.getenv("DISCORD_TOKEN"))
