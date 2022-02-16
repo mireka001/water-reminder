@@ -122,8 +122,8 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
-    elif message.content.lower().strip().startswith('.love'):
-       await message.channel.send('"i love you guys too <a:heartwonclejazz:931061570920931368>"')
+    elif message.content.lower().strip().startswith(',aert'):
+       await message.channel.send('i love you guys too <a:heartwonclejazz:931061570920931368>')
        time.sleep(2)
        await message.delete()
 
