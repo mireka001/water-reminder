@@ -16,11 +16,11 @@ async def on_message(message):
         return
 
     # Men I Trust Embed:
-    if message.content.lower().strip().startswith('.information'):
+    if message.content.lower().strip().startswith('.verify'):
        embed_m = discord.Embed(colour=0xFF0000)
-       embed_m.add_field(name="<a:burst2:934223774759399514> Server Information <a:burst2:934223774759399514>",
-                         value="-\n\n<a:burst5:934223774788759592> **No discrimination, harrassment, or bullying.**\n\n<a:burst5:934223774788759592> **No attacking members based on race, sexuality, gender identity, etc.**\n\n<a:burst5:934223774788759592> **Be respectful & kind.**\n\n<a:burst5:934223774788759592> **Insulting Emma Proulx, Dragos Chiriac, and Jessy Caron is not permitted. This is punishable by ban.**\n\n<a:burst5:934223774788759592> **Roles within the server;**\n\n<@&924340565347299369> - **Owner.**\n\n<@&924206476149538828> - **Co-Owner.**\n\n<@&924156949401047061> - **Band Members.**\n\n<@&749401066428170298> - **Boosters.**\n\n<@&933175183861219399> - **Given Role.**")
-       embed_m.set_thumbnail(url="https://images.squarespace-cdn.com/content/v1/54e1b4c1e4b0ef0a3e407bd1/1586767283721-Y9HQUO82LJC594XQA562/daisies_white_footer.gif")
+       embed_m.add_field(name="<a:bubblerf:935756938661232690> How to verify <a:bubblerf:935756938661232690>",
+                         value="-\n\n<a:bubblerf:935756938661232690> **type !verify and enter the given code. if there are any issues; please contact <@713677600572047401> <a:bubblerf:935756938661232690>)
+       embed_m.set_thumbnail(url="https://media0.giphy.com/media/llQMjpdCwjdrVGzz1d/giphy.gif?cid=6c09b9528eaab2579a62af2f59c77ff0b7069e2bda67db43&rid=giphy.gif&ct=s")
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
