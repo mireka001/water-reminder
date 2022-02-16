@@ -19,7 +19,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.verify'):
        embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="<a:bubblerf:935756938661232690> How to verify <a:bubblerf:935756938661232690>",
-                         value="-\n\n<a:bubblerf:935756938661232690> **type !verify and enter the given code. if there are any issues; please contact <@713677600572047401> <a:bubblerf:935756938661232690>)
+                         value="-\n\n<a:bubblerf:935756938661232690> **type !verify and enter the given code. if there are any issues; please contact <@713677600572047401> <a:bubblerf:935756938661232690>")
        embed_m.set_thumbnail(url="https://media0.giphy.com/media/llQMjpdCwjdrVGzz1d/giphy.gif?cid=6c09b9528eaab2579a62af2f59c77ff0b7069e2bda67db43&rid=giphy.gif&ct=s")
        await message.channel.send(embed=embed_m)
        time.sleep(2)
