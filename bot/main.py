@@ -19,7 +19,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.channel'):
        embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="<a:bubblerf:935756938661232690> Server Information; <a:bubblerf:935756938661232690>",
-                         value='-\n\n<a:bubblercyan:935757958254583868> No discrimination, Bullying, etc.\n\n<a:bubblercyan:935757958254583868> Attacking any members based on sexuality, race, etc is not allowed.\n\n- **Men I Trust Roles:**\n\n<a:bubblerf:935756938661232690> <@&924152053150920764> - Owner\n\n<a:bubblerf:935756938661232690> <@&931682984568979537> - Co-Owner\n\n<a:bubblerf:935756938661232690> <@&924156949401047061> - Official Band Members\n\n<a:bubblerf:935756938661232690> <@&749401066428170298> - Boosters within the server\n\nThanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>')
+                         value='-\n\n<a:bubblercyan:935757958254583868> No discrimination, Bullying, etc.\n\n<a:bubblercyan:935757958254583868> Attacking any members based on sexuality, race, etc is not allowed.\n\n- **Men I Trust Roles;**\n\n<a:bubblerf:935756938661232690> <@&924152053150920764> - Owner\n\n<a:bubblerf:935756938661232690> <@&931682984568979537> - Co-Owner\n\n<a:bubblerf:935756938661232690> <@&924156949401047061> - Official Band Members\n\n<a:bubblerf:935756938661232690> <@&749401066428170298> - Boosters within the server\n\nThanks so much! ~ Oncle <a:heartwonclejazz:931061570920931368>')
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
