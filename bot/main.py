@@ -21,7 +21,6 @@ async def on_message(message):
        embed_m.add_field(name="<a:bubblerf:935756938661232690> Server Information; <a:bubblerf:935756938661232690>",
                          value='-\n\n**Rules;**\n\nNo discrimination, Bullying, etc.\n\nAttacking any members based on sexuality, race, gender identity, etc is punishable by **ban.**\n\nNSFW is **not permitted** within the server, due to the fact that we are minor friendly.\n\n- \n\n**Server Roles;**\n\n<@&924152053150920764> - Owner\n\n<@&931682984568979537> - Co-Owner\n\n<@&937601501201833984> - Staff Members\n\n<@&924156949401047061> - Official Band Members\n\n<@&749401066428170298> - Boosters within the server\n\nThanks so much! ~ Men I Trust Staff <:hartpinky:931246593527644190>')
        await message.channel.send(embed=embed_m)
-       embed_m.set_thumbnail(url="https://emoji.gg/assets/emoji/8777_Approval.gif")
        time.sleep(2)
        await message.delete()
 
