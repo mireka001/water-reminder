@@ -19,7 +19,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.channel'):
        embed_m = discord.Embed(colour=0xFF0000)
        embed_m.add_field(name="**Server Information;**",
-                         value='-\n\n**Rules;**\n\nNo discrimination, Bullying, etc.\n\nAttacking any members based on sexuality, race, gender identity, etc is punishable by **ban.**\n\nNSFW is **not permitted** within the server, due to the fact that we are minor friendly.\n\n- \n\n**Server Roles;**\n\n<@&924152053150920764> - Owners <@713677600572047401>, <@304995404917768193>\n\n<@&937601501201833984> - Staff Members \n\n<@194886824047411200>, <@340537369125978123>, <@695788578596192286>, <@429723963157905410>, <@231909234105647105>\n\n<@&924156949401047061> - Official Band Members \n\n<@827774151930019850>\n\n<@&749401066428170298> - Boosters within the server\n\nThanks so much! ~ Men I Trust Staff <:hartpinky:931246593527644190>')
+                         value='-\n\n**Rules;**\n\nNo discrimination, Bullying, etc.\n\nAttacking any members based on sexuality, race, gender identity, etc is punishable by **ban.**\n\nNSFW is **not permitted** within the server, due to the fact that we are minor friendly.\n\n- \n\n**Server Roles;**\n\n<@&924152053150920764> - Owners <@713677600572047401>, <@304995404917768193>\n\n<@&937601501201833984> - Staff Members \n\n<@&924156949401047061> - Official Band Members\n\n<@&749401066428170298> - Boosters within the server\n\nThanks so much! ~ Men I Trust Staff <:hartpinky:931246593527644190>')
        embed_m.set_thumbnail(url="https://cdn.discordapp.com/emojis/931246593527644190.webp?size=240&quality=lossless")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
