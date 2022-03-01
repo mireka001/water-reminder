@@ -127,7 +127,7 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
-    elif message.content.lower().strip().startswith('.fokah'):
+    elif message.content.lower().strip().startswith('.ama'):
        await message.channel.send('oh, you fokah')
        time.sleep(2)
        await message.delete()
