@@ -127,5 +127,9 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    elif message.content.lower().strip().startswith('.fokah'):
+       await message.channel.send('oh, you fokah')
+       time.sleep(2)
+       await message.delete()
 
 client.run(os.getenv("DISCORD_TOKEN"))
