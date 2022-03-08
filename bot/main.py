@@ -132,4 +132,9 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    elif message.content.lower().strip().startswith('.meme'):
+       await message.channel.send('meme, even at your lowest in life. i want you to know that you matter. you matter not only to me; but to us all. you have been such a bright person in my life. and i can\'t ask for a better person to do so. you make this world so much brighter in these hard times. i know you\'ve had your own struggles but i want you to know that i am so proud of you for getting past them, and moving fowards. you\'re so brave. i love you so much love.')
+       time.sleep(2)
+       await message.delete()
+
 client.run(os.getenv("DISCORD_TOKEN"))
