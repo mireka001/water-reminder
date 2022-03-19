@@ -18,7 +18,7 @@ async def on_message(message):
     # Men I Trust Embed:
     if message.content.lower().strip().startswith('.channel'):
        embed_m = discord.Embed(colour=0xFF0000)
-       embed_m.add_field(name="**Server Information;** https://cdn.discordapp.com/attachments/924185580210909224/954842397282566175/hayden-roberts-81fe8592-9098-48d6-8aea-97bd82a57b83.gif",
+       embed_m.add_field(name="**Server Information;**",
                          value='-\n\n**Rules;**\n\nNo discrimination, Bullying, etc.\n\nAttacking any members based on sexuality, race, gender identity, etc is punishable by **ban.**\n\nNSFW is **not permitted** within the server, due to the fact that we are minor friendly.\n\n- \n\n**Server Roles;**\n\n<@&924152053150920764> - Owners <@713677600572047401>, <@304995404917768193>\n\n<@&937601501201833984> - Staff Members \n\n<@&924156949401047061> - Official Band Members\n\n<@&749401066428170298> - Boosters within the server\n\nThanks so much! ~ Men I Trust Staff <:hartpinky:931246593527644190>')
        embed_m.set_thumbnail(url="https://cdn.discordapp.com/emojis/931246593527644190.webp?size=240&quality=lossless")                
        await message.channel.send(embed=embed_m)
