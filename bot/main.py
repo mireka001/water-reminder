@@ -16,8 +16,8 @@ async def on_message(message):
         return
 
     #embed:
-    if message.content.lower().strip().startswith('.info'):
-       embed_m = discord.Embed(colour=fbf2b4)
+    if message.content.lower().strip().startswith('.dinfo'):
+       embed_m = discord.Embed(colour=0xfbf2b4)
        embed_m.add_field(name="-",
                          value='\n\nplease be kind <a:hartlemon:957115698327482428>\n\nwe love u here, no need to worry <a:hartlemon:957115698327482428>')
        embed_m.set_thumbnail(url="top right")                
