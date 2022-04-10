@@ -18,7 +18,7 @@ async def on_message(message):
     #embed:
     if message.content.lower().strip().startswith('.dinfo'):
        embed_m = discord.Embed(colour=0xfbf2b4)
-       embed_m.add_field(name="-",
+       embed_m.add_field(name="",
                          value='\n\nplease be kind <a:hartlemon:957115698327482428>\n\nwe love u here, no need to worry <a:hartlemon:957115698327482428>')
        embed_m.set_image(url="https://cdn.discordapp.com/attachments/957102779334270986/962568895812751410/outside_.png")                
        await message.channel.send(embed=embed_m)
