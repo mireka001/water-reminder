@@ -17,7 +17,7 @@ async def on_message(message):
 
     #embed:
     if message.content.lower().strip().startswith('.dhinfo'):
-       embed_m = discord.Embed(colour=0xfbf2b4)
+       embed_m = discord.Embed(colour=0x416990)
        embed_m.add_field(name="~",
                          value='\n\n<a:dhrribbonblue:962889749255839784> please be kind\n\n<a:dhrribbonblue:962889749255839784> we love u here, no need to worry')
        embed_m.set_image(url="https://media.discordapp.net/attachments/917513455395831818/962895881219211274/mr._duckie_-1.png")                
