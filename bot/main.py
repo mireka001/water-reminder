@@ -27,8 +27,8 @@ async def on_message(message):
         
     if message.content.lower().strip().startswith('.dhembed1'):
        embed_m = discord.Embed(colour=0xfbf2b4)
-       embed_m.add_field(name="<a:dhrribbonyellow:962889749146771466>\n\n",
-                         value='\n\n<a:hartlemon:957115698327482428> <@&957540747538751519>\n\n<a:hartorange:957115698415542322> <@&957540790689755256>\n\n<a:hartlime:957115698352619610> <@&957540772398395392>\n\n<a:hartraspberry:957115698323259452> <@&957540812877611048>\n\n<:dhrknife:959494964943912990>  <@&957540922671923271>\n\n~\n\n<a:hartcherry:957115698231013407> <@&957542213905182760>\n\n<a:hartstrawberry:957115698491060255> <@&957542256456396820>')
+       embed_m.add_field(name="<a:dhrribbonyellow:962889749146771466>",
+                         value='\n\n\n\n<a:hartlemon:957115698327482428> <@&957540747538751519>\n\n<a:hartorange:957115698415542322> <@&957540790689755256>\n\n<a:hartlime:957115698352619610> <@&957540772398395392>\n\n<a:hartraspberry:957115698323259452> <@&957540812877611048>\n\n<:dhrknife:959494964943912990>  <@&957540922671923271>\n\n~\n\n<a:hartcherry:957115698231013407> <@&957542213905182760>\n\n<a:hartstrawberry:957115698491060255> <@&957542256456396820>')
        embed_m.set_image(url="https://images-ext-1.discordapp.net/external/cltbshTV53E50-JHN9jct7H2cRFKWCwlzt0hhPlR6-w/https/media.discordapp.net/attachments/957479101298536458/957483402750230578/sunflower.jpg")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
