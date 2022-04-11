@@ -19,8 +19,8 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.dhinfo'):
        embed_m = discord.Embed(colour=0x416990)
        embed_m.add_field(name="~",
-                         value='\n\n<a:dhrribbonblue:962889749255839784> please be kind\n\n<a:dhrribbonblue:962889749255839784> we love u here, no need to worry')
-       embed_m.set_image(url="https://media.discordapp.net/attachments/917513455395831818/962895881219211274/mr._duckie_-1.png")                
+                         value='\n\n<:dhrduckheart:960366979657650176> please be kind\n\n<:dhrduckheart:960366979657650176> we love u here, no need to worry')
+       embed_m.set_image(url="https://media.discordapp.net/attachments/917513455395831818/962904025689387018/mr._duckie_-3.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
@@ -29,7 +29,7 @@ async def on_message(message):
        embed_m = discord.Embed(colour=0xfbf2b4)
        embed_m.add_field(name="~",
                          value='\n\n<a:hartlemon:957115698327482428> <@&957540747538751519>\n\n<a:hartorange:957115698415542322> <@&957540790689755256>\n\n<a:hartlime:957115698352619610> <@&957540772398395392>\n\n<a:hartraspberry:957115698323259452> <@&957540812877611048>\n\n<:dhrknife:959494964943912990>  <@&957540922671923271>\n\n~\n\n<a:hartcherry:957115698231013407> <@&957542213905182760>\n\n<a:hartstrawberry:957115698491060255> <@&957542256456396820>')
-       embed_m.set_image(url="https://images-ext-1.discordapp.net/external/cltbshTV53E50-JHN9jct7H2cRFKWCwlzt0hhPlR6-w/https/media.discordapp.net/attachments/957479101298536458/957483402750230578/sunflower.jpg")                
+       embed_m.set_image(url="")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
