@@ -28,7 +28,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.dhembedrr1'):
        embed_m = discord.Embed(colour=0x336a94)
        embed_m.add_field(name="~",
-                         value='\n\n<a:dhrribbonblue:962889749255839784> <@&957540747538751519>\n\n<a:dhrribbonblue:962889749255839784> <@&957540790689755256>\n\n<a:dhrribbonblue:962889749255839784> <@&957540772398395392>\n\n<a:dhrribbonblue:962889749255839784> <@&957540812877611048>\n\n<a:dhrribbonblue:962889749255839784>  <@&957540922671923271>\n\n~\n\n<a:dhrribbonblue:962889749255839784> <@&957542213905182760>\n\n<a:dhrribbonblue:962889749255839784> <@&957542256456396820>')
+                         value='\n\n<a:dhrribbonblue:962889749255839784> <@&957540747538751519>\n\n<a:dhrribbonblue:962889749255839784> <@&957540790689755256>\n\n<a:dhrribbonblue:962889749255839784> <@&957540772398395392>\n\n<a:dhrribbonblue:962889749255839784> <@&957540812877611048>\n\n<a:dhrribbonblue:962889749255839784> <@&957540851901403166>\n\n<a:dhrribbonblue:962889749255839784>  <@&957540922671923271>\n\n~\n\n<a:dhrribbonblue:962889749255839784> <@&957542213905182760>\n\n<a:dhrribbonblue:962889749255839784> <@&957542256456396820>')
        embed_m.set_image(url="https://media.discordapp.net/attachments/917513455395831818/962905226166296596/mr._duckie_-1_re-revised.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
