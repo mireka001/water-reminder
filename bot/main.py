@@ -25,7 +25,7 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
         
-    if message.content.lower().strip().startswith('.dhembed1'):
+    if message.content.lower().strip().startswith('.dhembedrr1'):
        embed_m = discord.Embed(colour=0x336a94)
        embed_m.add_field(name="~",
                          value='\n\n<a:dhrribbonblue:962889749255839784> <@&957540747538751519>\n\n<a:dhrribbonblue:962889749255839784> <@&957540790689755256>\n\n<a:dhrribbonblue:962889749255839784> <@&957540772398395392>\n\n<a:dhrribbonblue:962889749255839784> <@&957540812877611048>\n\n<a:dhrribbonblue:962889749255839784>  <@&957540922671923271>\n\n~\n\n<a:dhrribbonblue:962889749255839784> <@&957542213905182760>\n\n<a:dhrribbonblue:962889749255839784> <@&957542256456396820>')
@@ -34,7 +34,7 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
-    if message.content.lower().strip().startswith('.dhembed2'):
+    if message.content.lower().strip().startswith('.dhembedrr2'):
        embed_m = discord.Embed(colour=0xa40e26)
        embed_m.add_field(name="~",
                          value='\n\n<:dhoc:959584599841849344> <@&959587688086917233>\n\n<:dhasia:959584599728603187> <@&959577150393057290>\n\n<:dheu:959584599644700723> <@&959577017072881714>\n\n<:dhna:959584599229472839> <@&959576872717541387>\n\n<:dhsa:959584599355301988> <@&959576971455643708>')
