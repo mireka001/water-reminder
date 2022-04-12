@@ -46,16 +46,8 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.dhembedrr3'):
        embed_m = discord.Embed(colour=0xEA8D35)
        embed_m.add_field(name="~",
-                         value='\n\n<:dhrflower:959494929262968903> <@&963378319389261825>\n\n<:dhrflower:959494929262968903> <@&963378529536475176>\n\n<:dhrflower:959494929262968903>  <@&963378531994337360>\n\n<:dhrflower:959494929262968903> <@&963378533391024150>\n\n<:dhrflower:959494929262968903> <@&963378534364119080>\n\n<:dhrflower:959494929262968903> <@&963378535123275796>\n\n<:dhrflower:959494929262968903> <@&963378537304301568>\n\n<:dhrflower:959494929262968903> <@&963378537946026004>\n\n<:dhrflower:959494929262968903> <@&963378539246268417>\n\n<:dhrflower:959494929262968903> <@&963379237425926144>')
+                         value='\n\n<:dhrflower:959494929262968903> <@&963378319389261825>\n\n<:dhrflower:959494929262968903> <@&963378529536475176>\n\n<:dhrflower:959494929262968903>  <@&963378531994337360>\n\n<:dhrflower:959494929262968903> <@&963378533391024150>\n\n<:dhrflower:959494929262968903> <@&963378534364119080>\n\n<:dhrflower:959494929262968903> <@&963378535123275796>\n\n<:dhrflower:959494929262968903> <@&963378537304301568>\n\n<:dhrflower:959494929262968903> <@&963378537946026004>\n\n<:dhrflower:959494929262968903> <@&963378539246268417>\n\n<:dhrflower:959494929262968903> <@&963379237425926144>\n\n<:dhrflower:959494929262968903> <@&963388911848128562>\n\n<:dhrflower:959494929262968903> <@&963388936842010675>')
        embed_m.set_image(url="https://cdn.discordapp.com/attachments/957102779334270986/963385766728323142/135-1356350_hue-y-duck-pixel-duck-hd-png-download-removebg-preview3.png")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete()
-
-    if message.content.lower().strip().startswith('.dhembedrr4'):
-       embed_m = discord.Embed(colour=0xEA8D35)
-       embed_m.add_field(name="~",
-                         value='\n\n<:dhrflower:959494929262968903> <@&963388911848128562>\n\n<:dhrflower:959494929262968903> <@&963388936842010675>')                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
