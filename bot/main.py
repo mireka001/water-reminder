@@ -47,7 +47,7 @@ async def on_message(message):
        embed_m = discord.Embed(colour=0xa40e26)
        embed_m.add_field(name="~",
                          value='\n\n<:dhrflower:959494929262968903> <@&963378319389261825>\n\n<:dhrflower:959494929262968903> <@&963378529536475176>\n\n<:dhrflower:959494929262968903>  <@&963378531994337360>\n\n<:dhrflower:959494929262968903> <@&963378533391024150>\n\n<:dhrflower:959494929262968903> <@&963378534364119080>\n\n<:dhrflower:959494929262968903> <@&963378535123275796>\n\n<:dhrflower:959494929262968903> <@&963378537304301568>\n\n<:dhrflower:959494929262968903> <@&963378537946026004>\n\n<:dhrflower:959494929262968903> <@&963378539246268417>\n\n<:dhrflower:959494929262968903> <@&963379237425926144>')
-       embed_m.set_image(url="https://i.pinimg.com/originals/6a/7c/82/6a7c822f7e335c7eab9e3d1d2472168b.jpg")                
+       embed_m.set_thumbnail(url="https://cdn.discordapp.com/attachments/957102779334270986/963385766728323142/135-1356350_hue-y-duck-pixel-duck-hd-png-download-removebg-preview3.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
