@@ -52,6 +52,14 @@ async def on_message(message):
        time.sleep(2)
        await message.delete()
 
+    if message.content.lower().strip().startswith('.dhembedrr4'):
+       embed_m = discord.Embed(colour=0xEA8D35)
+       embed_m.add_field(name="~",
+                         value='\n\n<:dhrflower:959494929262968903> <@&963388911848128562>\n\n<:dhrflower:959494929262968903> <@&963388936842010675>')                
+       await message.channel.send(embed=embed_m)
+       time.sleep(2)
+       await message.delete()
+
     #commands:
     elif message.content.lower().strip().startswith('commandhere'):
        await message.channel.send('bodytexthere')
