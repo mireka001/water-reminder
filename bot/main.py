@@ -28,8 +28,8 @@ async def on_message(message):
     if message.content.lower().strip().startswith('.dhembedrr1'):
        embed_m = discord.Embed(colour=0x336a94)
        embed_m.add_field(name="~",
-                         value='\n\n<a:dhrribbonblue:962889749255839784> <@&957540747538751519>\n\n<a:dhrribbonblue:962889749255839784> <@&957540790689755256>\n\n<a:dhrribbonblue:962889749255839784> <@&957540772398395392>\n\n<a:dhrribbonblue:962889749255839784> <@&957540812877611048>\n\n<a:dhrribbonblue:962889749255839784> <@&957540851901403166>\n\n<a:dhrribbonblue:962889749255839784>  <@&957540922671923271>\n\n~\n\n<a:dhrribbonblue:962889749255839784> <@&957542213905182760>\n\n<a:dhrribbonblue:962889749255839784> <@&957542256456396820>')
-       embed_m.set_image(url="https://media.discordapp.net/attachments/917513455395831818/962905226166296596/mr._duckie_-1_re-revised.png")                
+                         value='\n\n<a:blackarrow:967236196818382939> <@&957540747538751519>\n\n<a:blackarrow:967236196818382939> <@&957540790689755256>\n\n<a:blackarrow:967236196818382939> <@&957540772398395392>\n\n<a:blackarrow:967236196818382939> <@&957540812877611048>\n\n<a:blackarrow:967236196818382939> <@&957540851901403166>\n\n<a:blackarrow:967236196818382939>  <@&957540922671923271>\n\n~\n\n<a:blackarrow:967236196818382939> <@&957542213905182760>\n\n<a:blackarrow:967236196818382939> <@&957542256456396820>')
+       embed_m.set_image(url="https://images.unsplash.com/photo-1597871040916-4b4c20ba08dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&w=1000&q=80")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
