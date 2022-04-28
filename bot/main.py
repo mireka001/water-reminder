@@ -44,7 +44,7 @@ async def on_message(message):
        embed_m = discord.Embed(colour=0x000000)
        embed_m.add_field(name="<3",
                          value='<a:blackarrow:969162216307818556> <@&963378319389261825>\n\n<a:blackarrow:969162216307818556> <@&963378529536475176>\n\n<a:blackarrow:969162216307818556> <@&963378531994337360>\n\n<a:blackarrow:969162216307818556> <@&963378533391024150>\n\n<a:blackarrow:969162216307818556> <@&963378534364119080>\n\n<a:blackarrow:969162216307818556> <@&963378535123275796>')
-       embed_m.set_image(url="")                
+       embed_m.set_image(url="https://cdn.discordapp.com/attachments/957102779334270986/969172485545287680/3263_Blank.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
