@@ -44,7 +44,7 @@ async def on_message(message):
        embed_m = discord.Embed(colour=0x000000)
        embed_m.add_field(name="<3",
                          value='<a:blackarrow:969162216307818556> <@&963378319389261825>\n\n<a:blackarrow:969162216307818556> <@&963378529536475176>\n\n<a:blackarrow:969162216307818556> <@&963378531994337360>\n\n<a:blackarrow:969162216307818556> <@&963378533391024150>\n\n<a:blackarrow:969162216307818556> <@&963378534364119080>\n\n<a:blackarrow:969162216307818556> <@&963378535123275796>\n\n<a:blackarrow:969162216307818556> <@&963378537304301568>\n\n<a:blackarrow:969162216307818556> <@&963378537946026004>\n\n<a:blackarrow:969162216307818556> <@&963378539246268417>\n\n<a:blackarrow:969162216307818556> <@&963379237425926144>\n\n<a:blackarrow:969162216307818556> <@&963388911848128562>\n\n<a:blackarrow:969162216307818556> <@&963388936842010675>')
-       embed_m.set_image(url="https://cdn.discordapp.com/attachments/957102779334270986/969203103696035890/Color-wheel-light-color-spectrum-removebg-preview.png")                
+       embed_m.set_thumbnail(url="https://cdn.discordapp.com/attachments/957102779334270986/969203103696035890/Color-wheel-light-color-spectrum-removebg-preview.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
