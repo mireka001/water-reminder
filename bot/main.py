@@ -63,7 +63,7 @@ async def on_message(message):
 
 
     if message.content.lower().strip().startswith('blank'):
-       embed_m = discord.Embed(colour=0x000000)
+       embed_m = discord.Embed(colour=0x456098)
        embed_m.add_field(name="<3",
                          value='')
        embed_m.set_image(url="")                
