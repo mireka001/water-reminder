@@ -53,8 +53,8 @@ async def on_message(message):
        await message.delete()
 
     #commands:
-    elif message.content.lower().strip().startswith('commandhere'):
-       await message.channel.send('bodytexthere')
+    elif message.content.lower().strip().startswith('amadeustest'):
+       await message.channel.send('lollipoplollipop')
        time.sleep(2)
        await message.delete()
 
