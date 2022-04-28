@@ -43,19 +43,19 @@ async def on_message(message):
     if message.content.lower().strip().startswith(';roles3'):
        embed_m = discord.Embed(colour=0x000000)
        embed_m.add_field(name="<3",
-                         value='<a:blackarrow:969162216307818556> <@&963378319389261825>\n\n<a:blackarrow:969162216307818556> <@&963378529536475176>\n\n<a:blackarrow:969162216307818556> <@&963378531994337360>\n\n<a:blackarrow:969162216307818556> <@&963378533391024150>\n\n<a:blackarrow:969162216307818556> <@&963378534364119080>\n\n<a:blackarrow:969162216307818556> <@&963378535123275796>\n\n<a:blackarrow:969162216307818556> <@&963378537304301568>\n\n<a:blackarrow:969162216307818556> <@&963378537946026004>\n\n<a:blackarrow:969162216307818556> <@&963378539246268417>\n\n<a:blackarrow:969162216307818556> <@&963379237425926144>\n\n<a:blackarrow:969162216307818556> <@&963388911848128562>\n\n<a:blackarrow:969162216307818556> <@&963388936842010675>')
-       embed_m.set_image(url="https://i.etsystatic.com/25815771/r/il/d6e573/3661579156/il_1588xN.3661579156_hsa5.jpg")                
+                         value='<a:blackarrow:969162216307818556> <@&963378319389261825>\n\n<a:blackarrow:969162216307818556> <@&963378529536475176>\n\n<a:blackarrow:969162216307818556> <@&963378531994337360>\n\n<a:blackarrow:969162216307818556> <@&963378533391024150>\n\n<a:blackarrow:969162216307818556> <@&963378534364119080>\n\n<a:blackarrow:969162216307818556> <@&963378535123275796>')
+       embed_m.set_image(url="")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
 
 
 
-    if message.content.lower().strip().startswith('blank'):
+    if message.content.lower().strip().startswith(';roles4'):
        embed_m = discord.Embed(colour=0x000000)
        embed_m.add_field(name="<3",
-                         value='')
-       embed_m.set_image(url="")                
+                         value='\n\n<a:blackarrow:969162216307818556> <@&963378537304301568>\n\n<a:blackarrow:969162216307818556> <@&963378537946026004>\n\n<a:blackarrow:969162216307818556> <@&963378539246268417>\n\n<a:blackarrow:969162216307818556> <@&963379237425926144>\n\n<a:blackarrow:969162216307818556> <@&963388911848128562>\n\n<a:blackarrow:969162216307818556> <@&963388936842010675>')
+       embed_m.set_image(url="https://i.etsystatic.com/25815771/r/il/d6e573/3661579156/il_1588xN.3661579156_hsa5.jpg")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
