@@ -53,8 +53,8 @@ async def on_message(message):
        await message.delete()
 
     #commands:
-    elif message.content.lower().strip().startswith('amadeustest'):
-       await message.channel.send('lollipoplollipop')
+    elif message.content.lower().strip().startswith('aaa'):
+       await message.channel.send('heyiworked')
        time.sleep(2)
        await message.delete()
 
