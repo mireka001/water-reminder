@@ -50,7 +50,7 @@ async def on_message(message):
        await message.delete()
 
 
-
+'''
     if message.content.lower().strip().startswith(';blank'):
        embed_m = discord.Embed(colour=0x000000)
        embed_m.add_field(name="<3",
@@ -70,6 +70,6 @@ async def on_message(message):
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete()
-
+'''
 
 client.run(os.getenv("DISCORD_TOKEN"))
