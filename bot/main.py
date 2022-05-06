@@ -21,7 +21,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith(';roles1'):
        embed_m = discord.Embed(colour=0x000000)
        embed_m.add_field(name="<3",
-                         value='<a:blackarrow:969162216307818556> <@&957540747538751519>\n\n<a:blackarrow:969162216307818556> <@&957540790689755256>\n\n<a:blackarrow:969162216307818556> <@&957540851901403166>\n\n<a:blackarrow:969162216307818556> <@&957542213905182760>\n\n<a:blackarrow:969162216307818556> <@&957542256456396820>')
+                         value='<a:blackarrow:969162216307818556> <@&957540747538751519>\n\n<a:blackarrow:969162216307818556> <@&957540790689755256>\n\n<a:blackarrow:969162216307818556> <@&957540772398395392>\n\n<a:blackarrow:969162216307818556> <@&957540812877611048>\n\n<a:blackarrow:969162216307818556> <@&957540851901403166>\n\n<a:blackarrow:969162216307818556> <@&957542213905182760>\n\n<a:blackarrow:969162216307818556> <@&957542256456396820>')
        embed_m.set_image(url="https://images-ext-1.discordapp.net/external/SqDgswiJyElYFa64YXiy7hXmbQghrJbs4SF5Ll4udOk/https/images-ext-2.discordapp.net/external/Mn4vIHHMLfOa-yPuL5gXZ6PgmW3nvHnTVJZJXLDqDaw/%253Fauto%253Dcompress%2526cs%253Dtinysrgb%2526dpr%253D1%2526w%253D500/https/images.pexels.com/photos/3048527/pexels-photo-3048527.png")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
