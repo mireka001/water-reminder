@@ -50,7 +50,7 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('$testingembed'):
         await message.channel.send('this command *should* delete')
-       time.sleep(2)
+        time.sleep(2)
        await message.delete()
 
 
