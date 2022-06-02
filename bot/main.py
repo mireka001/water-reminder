@@ -51,4 +51,10 @@ async def on_message(message):
        await message.delete()
 
 
+    if message.content.lower().strip().startswith('$testingembed'):
+       await message.channel.send('this command *should* delete')
+       time.sleep(2)
+       await message.delete()
+
+
 client.run(os.getenv("DISCORD_TOKEN"))
