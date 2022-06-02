@@ -42,12 +42,12 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('$agua'):
         await message.channel.send('Tomen aguita cabros <3')
-       time.sleep(2)
+      time.sleep(2)
        await message.delete()
 
     if message.content.lower().strip().startswith('$benji'):
         await message.channel.send('the CLI works for us both now. finally done.*')
-       time.sleep(2)
+      time.sleep(2)
        await message.delete()
 
 
