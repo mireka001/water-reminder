@@ -10,7 +10,7 @@ client = discord.Client()
 async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water")) 
 
-target_channel_id = 860564834553692162
+target_channel_id = 860564834553692162, 938487387804286999
 
 @client.event
 async def on_message(message):
