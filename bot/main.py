@@ -45,7 +45,7 @@ async def on_message(message):
 
 
     if message.content.lower().strip().startswith('$benji'):
-        await message.channel.send('the CLI works for us both now. finally done.')
+        await message.channel.send('the CLI works for us both now. finally done.*')
 
 
 client.run(os.getenv("DISCORD_TOKEN"))
