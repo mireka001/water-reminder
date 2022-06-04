@@ -51,5 +51,10 @@ async def on_message(message):
         time.sleep(2)
         await message.delete()
 
+    if message.content.lower().strip().startswith('$pride'):
+        await message.channel.send('happy pride month from Water Reminder to you. I hope you have a enjoyable; and *refreshing* pride month.')
+        time.sleep(2)
+        await message.delete()
+
 
 client.run(os.getenv("DISCORD_TOKEN"))
