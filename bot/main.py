@@ -70,7 +70,7 @@ async def on_message(message):
        embed_m = discord.Embed(colour=0xa3dab5)
        embed_m.add_field(name="Server Roles:",
                          value='<@&957540747538751519>\n\n<@&957540790689755256>\n\n<@&957540772398395392>\n\n<@&957540812877611048>\n\n<@&957540851901403166>\n\n\<@&957542213905182760>\n\n<@&957542256456396820>')
-       embed_m.set_thumbnail(url="https://i.pinimg.com/originals/a1/9d/58/a19d581e96e95ee5572795a90ba0600f.gif")                
+       embed_m.set_thumbnail(url="https://media.discordapp.net/attachments/984628727021461504/984632547558436904/ezgif-1-6968916f5b.gif")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete() 
