@@ -59,9 +59,9 @@ async def on_message(message):
 
     if message.content.lower().strip().startswith('circuit1'):
        embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="~",
-                         value='This server is a friend based server. The following channels are designed for bot use; <#984622238311522364>, <#938487387804287001>, <#958956207941488680>, <#977347893386162186>. Some channels have more than one bot infused within itself; so be aware of it\'s designated channel. ')
-       embed_m.set_image(url="https://data.whicdn.com/images/356922579/original.gif")                
+       embed_m.add_field(name="Server Information:",
+                         value='\n\nThis server is a private, friend based community.\n\n Please be respectful of that, and refrain from "spreading" the server.\n\nOur server rules consist of;\n\n**Be respectful**\n\n**Be kind**\n\nPlease keep all NSFW content in it\'s **proper channel.**\n\nAny questions, or concerns please reach out to <@961462461763031070>.')
+       embed_m.set_image(url="https://thumbs.gfycat.com/WhoppingPassionateGalapagospenguin-max-1mb.gif")                
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete() 
