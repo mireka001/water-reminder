@@ -57,4 +57,13 @@ async def on_message(message):
         await message.delete()
 
 
+    if message.content.lower().strip().startswith('circuit1'):
+       embed_m = discord.Embed(colour=0xa3dab5)
+       embed_m.add_field(name="~",
+                         value='This server is a friend based server. The following channels are designed for bot use; <#984622238311522364>, <#938487387804287001>, <#958956207941488680>, <#977347893386162186>. Some channels have more than one bot infused within itself; so be aware of it\'s designated channel. ')
+       embed_m.set_image(url="https://data.whicdn.com/images/356922579/original.gif")                
+       await message.channel.send(embed=embed_m)
+       time.sleep(2)
+       await message.delete() 
+
 client.run(os.getenv("DISCORD_TOKEN"))
