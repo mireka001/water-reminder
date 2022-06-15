@@ -11,6 +11,7 @@ async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water")) 
 
 target_channel_id = 860564834553692162, 938487387804286999
+general_channel_id = 938487387804286999
 
 @client.event
 async def on_message(message):
@@ -20,9 +21,9 @@ async def on_message(message):
 #embed(s):
 @tasks.loop(hours=3)
 async def called_every_three_hours():
-    message_channel = bot.get_channel(target_channel_id)
+    message_channel = bot.get_channel(general_channel_id)
     print(f"Got channel {message_channel}")
-    await message_channel.send("Tomen agua porfa <3")
+    await message_channel.send("Don't forget to drink water <3")
 
 #Cron task reminder every 3 hours loop console print
 @called_every_three_hours.before_loop
