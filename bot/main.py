@@ -4,6 +4,9 @@ import os
 import time
 import json
 
+incorrect_emoji = "<:circuit2:987558719283945562>"
+
+
 bot = commands.Bot('$')
 client = discord.Client()
 
@@ -66,8 +69,7 @@ async def on_message(message):
        time.sleep(2)
        await message.delete() 
         
-        
-     incorrect_emoji = "<:circuit2:987558719283945562>"
+       
 
 
 def evaluate(exp, curr_count):
