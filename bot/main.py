@@ -164,7 +164,7 @@ async def on_message(message):
         data = json.load(file1)
 
     # Only react to other messages if they are sent in counting channel
-    if message.channel.id == int(os.getenv("CHANNEL_ID")):
+    if message.channel.id == int(os.getenv('CHANNEL_ID')):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
                       "<:circuit1:987558718583500820> ",                # 1, correct
