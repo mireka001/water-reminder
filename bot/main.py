@@ -3,7 +3,7 @@ import os
 import discord
 
 
-incorrect_emoji = "<:circuitredheart:984392507515363338"
+incorrect_emoji = "<:circuitredheart:984392507515363338>"
 
 
 def evaluate(exp, curr_count):
