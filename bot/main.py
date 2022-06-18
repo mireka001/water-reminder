@@ -4,7 +4,7 @@ from discord.ext import commands, tasks
 import os
 import time
         
-incorrect_emoji = "<:circuitredheart:984392507515363338>"
+incorrect_emoji = "<:circuit2:987558719283945562>"
 
 
 def evaluate(exp, curr_count):
@@ -125,8 +125,6 @@ async def on_ready():
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
 
-    # Change bot status
-    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name="Tailwhip"))
 
     # Confirmation message
     print('Logged in')
@@ -167,11 +165,11 @@ async def on_message(message):
     # Only react to other messages if they are sent in counting channel
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
-        emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:circuitgreenheart:984392506013806632>",                # 1, correct
-                      "<:dhrblush:959494939182497812>",                         # 2, 69
-                      "<:circuitblueheart:984392508333248523>",                 # 3, every 10 under 100
-                      "<a:dhrkirbybouncing:963454587757559908>"                 # 4, every 100 under 1000
+        emoji_list = [incorrect_emoji,                                         # 0, incorrect
+                      "<:circuit4:987558720689021058>",                        # 1, correct
+                      "<:circuit3:987558719946653737>",                        # 2, 69
+                      "<:circuit5:987558721376878602>",                        # 3, every 10 under 100
+                      "<:circuit6:987558722014421052> "                        # 4, every 100 under 1000
                       ]
 
         # List of forbidden start/end characters
@@ -238,7 +236,7 @@ async def on_message(message):
                 stats_arr = [ct_str, cc_str, ca_str]
 
             embed_m.add_field(
-                name="<a:dhrkirby:961019164242370652> Counting stats <a:dhrkirby:961019164242370652>",
+                name="<:circuit6:987558722014421052>  Counting stats <:circuit6:987558722014421052> ",
                 value="\n".join(stats_arr))
 
             await message.channel.send(embed=embed_m)
