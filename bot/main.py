@@ -1,8 +1,6 @@
 import json
 import os
 import discord
-from discord.ext import commands, tasks
-import time
         
 incorrect_emoji = "<:circuitredheart:984392507515363338>"
 
