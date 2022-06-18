@@ -10,7 +10,7 @@ client = discord.Client()
 async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water")) 
 
-target_channel_id = 860564834553692162, 938487387804286999
+target_channel_id = 860564834553692162
 general_channel_id = 938487387804286999
 
 @client.event
@@ -47,12 +47,6 @@ async def on_message(message):
         time.sleep(2)
         await message.delete()
 
-    if message.content.lower().strip().startswith('$testingembed'):
-        await message.channel.send('this command *should* delete')
-        time.sleep(2)
-        await message.delete()
-
-
     if message.content.lower().strip().startswith('$circuit1'):
        embed_m = discord.Embed(colour=0xa3dab5)
        embed_m.add_field(name="Server Information:",
@@ -70,15 +64,7 @@ async def on_message(message):
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete() 
-
-
-    if message.content.lower().strip().startswith('$circuit3'):
-       embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="<3",
-                         value='-\n\nbeep boop...\n\n<@&957053492906831945> i hope you all are doing well! please make sure to take care of yourselves. <:circuitgreenheart:984392506013806632>')
-       embed_m.set_thumbnail(url="https://cdn.discordapp.com/emojis/963450818147778570.gif?size=240&quality=lossless")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete() 
+       
+        
 
 client.run(os.getenv("DISCORD_TOKEN"))
