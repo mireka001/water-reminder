@@ -125,7 +125,7 @@ async def on_ready():
         json.dump(data, file2, indent=4)
 
     # Change bot status
-    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name="Sips"))
+    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name="Tailwhip"))
 
     # Confirmation message
     print('Logged in')
@@ -164,10 +164,10 @@ async def on_message(message):
         data = json.load(file1)
 
     # Only react to other messages if they are sent in counting channel
-    if message.channel.id == int(os.getenv('CHANNEL_ID')):
+    if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:circuit1:987558718583500820> ",                # 1, correct
+                      "<:circuitgreenheart:984392506013806632>",                # 1, correct
                       "<:dhrblush:959494939182497812>",                         # 2, 69
                       "<:circuitblueheart:984392508333248523>",                 # 3, every 10 under 100
                       "<a:dhrkirbybouncing:963454587757559908>"                 # 4, every 100 under 1000
