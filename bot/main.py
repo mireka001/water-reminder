@@ -223,7 +223,7 @@ async def on_message(message):
 
             ct_str = f"• Total counts from <@{u_id}>: {count_total}"
             cc_str = f"• Correct counts from <@{u_id}>: {count_correct}"
-            sc_str = "have fun <a:ayellowhart:957115698327482428>"
+            sc_str = "have fun <:circuit2:987558719283945562>"
             embed_m = discord.Embed()
 
             # Special case: user has never counted (avoiding ZeroDivisionError)
@@ -301,8 +301,8 @@ client = discord.Client()
 async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water")) 
 
-target_channel_id = 860564834553692162
-important_channel_id = 982460613575999549
+target_channel_id = 987556813069234250
+important_channel_id = 987556813069234250
 
 @client.event
 async def on_message(message):
