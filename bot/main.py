@@ -9,21 +9,6 @@ import time
 bot = commands.Bot('$')
 client = discord.Client()
 
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -83,7 +83,7 @@ async def on_message(message):
-  
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water!")) 
@@ -84,18 +69,9 @@ async def on_message(message):
        await message.delete() 
 
 
+
 incorrect_emoji = "<:circuitredheart:984392507515363338>"
 def evaluate(exp, curr_count):
-
-    
-          
-            
-    
-
-          
-    
-    
-  
     """
     Safely evaluates the mathematical expression in the message.
     Parameters
@@ -213,7 +189,7 @@ async def on_message(message):
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:test:987874867128975400>",                             # 1, correct
+                      "<:circuitgreenheart:984392506013806632>",                # 1, correct
                       "<:dhrblush:959494939182497812>",                         # 2, 69
                       "<:circuitblueheart:984392508333248523>",                 # 3, every 10 under 100
                       "<a:dhrkirbybouncing:963454587757559908>"                 # 4, every 100 under 1000
@@ -306,15 +282,18 @@ async def on_message(message):
                     # Reset all data except for counting channel
                     data["curr_count"] = 0
                     data["last_user"] = 0
+
                     embed_m = discord.Embed(
                         colour=0xFFFFFF, title="Wrong Count\n\nPlease proceed with the number; 1.")
                     embed_m.set_image(
                         url="https://media.discordapp.net/attachments/984628727021461504/984687150882783272/0013714421_10-removebg-preview.png")
                     await message.channel.send(embed=embed_m)
+
     
           
             
     
+
           
     
     
@@ -323,4 +302,5 @@ async def on_message(message):
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
     return
+   
 client.run(os.getenv("DISCORD_TOKEN"))
