@@ -5,7 +5,7 @@ import os
 import time
 
 
-'''
+
 bot = commands.Bot('$')
 client = discord.Client()
 
@@ -83,7 +83,7 @@ async def on_message(message):
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete() 
-'''
+
 
 incorrect_emoji = "<:circuitredheart:984392507515363338>"
 def evaluate(exp, curr_count):
