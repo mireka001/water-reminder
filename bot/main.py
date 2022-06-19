@@ -189,7 +189,7 @@ async def on_message(message):
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:circuitgreenheart:984392506013806632>",                # 1, correct
+                      "<:test:987874867128975400>",                             # 1, correct
                       "<:dhrblush:959494939182497812>",                         # 2, 69
                       "<:circuitblueheart:984392508333248523>",                 # 3, every 10 under 100
                       "<a:dhrkirbybouncing:963454587757559908>"                 # 4, every 100 under 1000
