@@ -6,14 +6,14 @@ import time
 
 
 
-bot = commands.Bot('!')
+bot = commands.Bot('$')
 client = discord.Client()
 
 @client.event
 async def on_ready():
-     await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water"))
-target_channel_id = 860564834553692162, 938487387804286999, 987873257342521460
-general_channel_id = 987873257342521460
+    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water!")) 
+target_channel_id = 860564834553692162, 938487387804286999
+general_channel_id = 938487387804286999
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -30,53 +30,29 @@ async def before():
     await bot.wait_until_ready()
     print("Finished waiting")
 called_every_three_hours.start()
-#Funcion para enviar mensaje con el comando
-@client.event
-async def on_message(message):
-    if message.author == bot.user:
-        return
-    if message.content.lower().strip().startswith('!agua'):
-        await message.channel.send('Tomen aguita cabros <3')
-        time.sleep(2)
-        await message.delete()
-    if message.content.lower().strip().startswith('!testingembed'):
-        await message.channel.send('this command *should* delete')
-        time.sleep(2)
-        await message.delete()
-    if message.content.lower().strip().startswith('$circuit1'):
-       embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="Server Information:",
-                         value='-\n\nThis server is a private, friend based community.\n\n Please be respectful of that, and refrain from "spreading" the server.\n\nOur server rules consist of;\n\n**Be respectful.**\n\n**Be kind.**\n\nPlease keep all NSFW content in it\'s **proper channel.**\n\nAny questions, or concerns please reach out to <@961462461763031070>.')
-       embed_m.set_thumbnail(url="https://thumbs.gfycat.com/WhoppingPassionateGalapagospenguin-max-1mb.gif")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete() 
-    if message.content.lower().strip().startswith('$circuit2'):
-       embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="Server Roles:",
-                         value='-\n\nThe roles provided, are Pronouns, and Age roles.\n\n*Please be aware that more may be added if needed.*\n\n<@&957540747538751519>\n\n<@&957540790689755256>\n\n<@&957540772398395392>\n\n<@&957540812877611048>\n\n<@&957540851901403166>\n\n<@&957542213905182760>\n\n<@&957542256456396820>')
-       embed_m.set_thumbnail(url="https://media.discordapp.net/attachments/984628727021461504/984632547558436904/ezgif-1-6968916f5b.gif")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete() 
-    if message.content.lower().strip().startswith('$circuit3'):
-       embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="<3",
-                         value='-\n\nbeep boop...\n\n<@&957053492906831945> i hope you all are doing well! please make sure to take care of yourselves. <:circuitgreenheart:984392506013806632>')
-       embed_m.set_thumbnail(url="https://cdn.discordapp.com/emojis/963450818147778570.gif?size=240&quality=lossless")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete() 
 
-
-
-incorrect_emoji = "<:redheart:987880814983380993>"
+incorrect_emoji = "<:circuitredheart:984392507515363338>"
 def evaluate(exp, curr_count):
+    """
+    Safely evaluates the mathematical expression in the message.
+    Parameters
+    ==========
+    - exp: :class:`str`
+        Expression to be verified
+    - curr_count: :class:`int`
+        The current count
+    Returns
+    =======
+    [
+        - :class:`int`: Evaluation result of expression (if valid), -infinity otherwise,
+        - :class:`bool`: Whether the expression evaluates to current_count + 1
+    ]
+    """
     # Disregard expressions with letters
     if any(char.isalpha() for char in exp):
         return [float("-inf"), False]
     # Replace exponentiation, multiplication and division signs with Pythonic equivalents
-    temp = exp.replace("^", "**").replace("×", "*").replace("÷", "/")
+    temp = exp.replace("^", "**").replace("ร—", "*").replace("รท", "/")
     # Perform the calculation
     try:
         result = eval(temp)
@@ -141,9 +117,53 @@ async def on_ready():
     # Update JSON file
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
+   
+    # Confirmation message
+    print('Logged in')
+    """ mit = client.get_guild(748634368037355524)
+    try:
+        await mit.leave()
+        print("Left MIT hehe")
+    except Exception:
+        print("No leave") """
     return
 @client.event
 async def on_message(message):
+    
+    if message.author == bot.user:
+        return
+    if message.content.lower().strip().startswith('$agua'):
+        await message.channel.send('Tomen aguita cabros <3')
+        time.sleep(2)
+        await message.delete()
+    if message.content.lower().strip().startswith('$testingembed'):
+        await message.channel.send('this command *should* delete')
+        time.sleep(2)
+        await message.delete()
+    if message.content.lower().strip().startswith('$circuit1'):
+       embed_m = discord.Embed(colour=0xa3dab5)
+       embed_m.add_field(name="Server Information:",
+                         value='-\n\nThis server is a private, friend based community.\n\n Please be respectful of that, and refrain from "spreading" the server.\n\nOur server rules consist of;\n\n**Be respectful.**\n\n**Be kind.**\n\nPlease keep all NSFW content in it\'s **proper channel.**\n\nAny questions, or concerns please reach out to <@961462461763031070>.')
+       embed_m.set_thumbnail(url="https://thumbs.gfycat.com/WhoppingPassionateGalapagospenguin-max-1mb.gif")                
+       await message.channel.send(embed=embed_m)
+       time.sleep(2)
+       await message.delete() 
+    if message.content.lower().strip().startswith('$circuit2'):
+       embed_m = discord.Embed(colour=0xa3dab5)
+       embed_m.add_field(name="Server Roles:",
+                         value='-\n\nThe roles provided, are Pronouns, and Age roles.\n\n*Please be aware that more may be added if needed.*\n\n<@&957540747538751519>\n\n<@&957540790689755256>\n\n<@&957540772398395392>\n\n<@&957540812877611048>\n\n<@&957540851901403166>\n\n<@&957542213905182760>\n\n<@&957542256456396820>')
+       embed_m.set_thumbnail(url="https://media.discordapp.net/attachments/984628727021461504/984632547558436904/ezgif-1-6968916f5b.gif")                
+       await message.channel.send(embed=embed_m)
+       time.sleep(2)
+       await message.delete() 
+    if message.content.lower().strip().startswith('$circuit3'):
+       embed_m = discord.Embed(colour=0xa3dab5)
+       embed_m.add_field(name="<3",
+                         value='-\n\nbeep boop...\n\n<@&957053492906831945> i hope you all are doing well! please make sure to take care of yourselves. <:circuitgreenheart:984392506013806632>')
+       embed_m.set_thumbnail(url="https://cdn.discordapp.com/emojis/963450818147778570.gif?size=240&quality=lossless")                
+       await message.channel.send(embed=embed_m)
+       time.sleep(2)
+       await message.delete() 
     """
     Handles stuff upon the arrival of a message
     Parameters
@@ -164,16 +184,16 @@ async def on_message(message):
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:greenheart:987880415605977110>",                       # 1, correct
-                      "<<:yellowheart:987880816082300968>",                         # 2, 69
+                      "<:test:987874867128975400>",                             # 1, correct
+                      "<:dhrblush:959494939182497812>",                         # 2, 69
                       "<:circuitblueheart:984392508333248523>",                 # 3, every 10 under 100
-                      "<:orangeheart:987880814652063774> "                 # 4, every 100 under 1000
+                      "<a:dhrkirbybouncing:963454587757559908>"                 # 4, every 100 under 1000
                       ]
         # List of forbidden start/end characters
         char_arr = ["~", "`", ".", ",", "!", "@", "#", "$", "%", "^", "&", ":", ";", "/", "\\",
                     "*", "(", ")", "<", ">", "?", "{", "}", "[", "]", "\"", "'", "|", "_", "="]
         # See stats using tailwhip!user <@user>; user parameter is optional
-        if message.content.startswith('$countstats'):
+        if message.content.startswith('!countstats'):
             # Determine whose stats to analyse
             u_id = ""
             msg_arr = message.content.split()
@@ -211,19 +231,19 @@ async def on_message(message):
                                 # Increment correct count if "incorrect" emoji NOT used
                                 if emoji_list[0][-19:-1] != str(emo1.emoji.id):
                                     count_correct += 1
-            ct_str = f"• Total counts from <@{u_id}>: {count_total}"
-            cc_str = f"• Correct counts from <@{u_id}>: {count_correct}"
-            sc_str = "have fun <:yellowheart:987880816082300968>"
+            ct_str = f"โ€ข Total counts from <@{u_id}>: {count_total}"
+            cc_str = f"โ€ข Correct counts from <@{u_id}>: {count_correct}"
+            sc_str = "have fun <a:ayellowhart:957115698327482428>"
             embed_m = discord.Embed()
             # Special case: user has never counted (avoiding ZeroDivisionError)
             if count_total == 0:
-                ca_str_0 = f"• Counting accuracy of <@{u_id}>: 𝗡/𝗔"
+                ca_str_0 = f"โ€ข Counting accuracy of <@{u_id}>: ๐—ก/๐—”"
                 stats_arr = [ct_str, cc_str, ca_str_0, sc_str]
             else:
-                ca_str = f"• Counting accuracy of <@{u_id}>: {round(count_correct / count_total * 100, 5)}%"
+                ca_str = f"โ€ข Counting accuracy of <@{u_id}>: {round(count_correct / count_total * 100, 5)}%"
                 stats_arr = [ct_str, cc_str, ca_str]
             embed_m.add_field(
-                name="<:redheart:987880814983380993> Counting stats <:redheart:987880814983380993>",
+                name="<a:dhrkirby:961019164242370652> Counting stats <a:dhrkirby:961019164242370652>",
                 value="\n".join(stats_arr))
             await message.channel.send(embed=embed_m)
         else:
@@ -264,6 +284,15 @@ async def on_message(message):
                         url="https://media.discordapp.net/attachments/984628727021461504/984687150882783272/0013714421_10-removebg-preview.png")
                     await message.channel.send(embed=embed_m)
 
+    
+          
+            
+    
+
+          
+    
+    
+  
     # Update JSON file
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
