@@ -288,15 +288,6 @@ async def on_message(message):
                         url="https://media.discordapp.net/attachments/984628727021461504/984687150882783272/0013714421_10-removebg-preview.png")
                     await message.channel.send(embed=embed_m)
 
-    
-          
-            
-    
-
-          
-    
-    
-  
     # Update JSON file
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
