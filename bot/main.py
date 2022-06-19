@@ -75,7 +75,7 @@ async def on_message(message):
        await message.delete() 
 
 
-    if message.content.lower().strip().startswith('$circuit3'):
+    if message.content.lower().strip().startswith('benjitesting'):
        embed_m = discord.Embed(colour=0xa3dab5)
        embed_m.add_field(name="<3",
                          value='-\n\nbeep boop...\n\n<@&957053492906831945> i hope you all are doing well! please make sure to take care of yourselves. <:circuitgreenheart:984392506013806632>')
