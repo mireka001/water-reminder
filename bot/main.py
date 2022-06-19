@@ -256,7 +256,7 @@ async def on_message(message):
                     data["last_user"] = 0
 
                     embed_m = discord.Embed(
-                        colour=0x2347c0, title="<:blueheart:987887292859449395>`Wrong Count`<:blueheart:987887292859449395>\n\n*Please proceed with the number; 1*")
+                        colour=0x2347c0, title="<:blueheart:987887292859449395>`Wrong Count`<:blueheart:987887292859449395>\n\n*Continúe con el número; 1.*")
                     embed_m.set_image(
                         url="https://www.hdnicewallpapers.com/Walls/Normal/Love%20Heart/Awesome_Love_Heart_Sign_in_Water_HD_Wallpapers.jpg")
                     await message.channel.send(embed=embed_m)
