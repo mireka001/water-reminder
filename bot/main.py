@@ -4,6 +4,8 @@ from discord.ext import commands, tasks
 import os
 import time
 
+
+'''
 bot = commands.Bot('$')
 client = discord.Client()
 
@@ -81,6 +83,7 @@ async def on_message(message):
        await message.channel.send(embed=embed_m)
        time.sleep(2)
        await message.delete() 
+'''
 
     if any(char.isalpha() for char in exp):
         return [float("-inf"), False]
