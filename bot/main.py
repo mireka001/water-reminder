@@ -11,7 +11,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water!")) 
+
 target_channel_id = 860564834553692162, 938487387804286999
 general_channel_id = 938487387804286999
 @client.event
@@ -24,6 +24,7 @@ async def called_every_three_hours():
     message_channel = bot.get_channel(general_channel_id)
     print(f"Got channel {message_channel}")
     await message_channel.send("Don't forget to drink water <3")
+
 #Cron task reminder every 3 hours loop console print
 @called_every_three_hours.before_loop
 async def before():
@@ -33,21 +34,7 @@ called_every_three_hours.start()
 
 incorrect_emoji = "<:redheart:987880814983380993>"
 def evaluate(exp, curr_count):
-    """
-    Safely evaluates the mathematical expression in the message.
-    Parameters
-    ==========
-    - exp: :class:`str`
-        Expression to be verified
-    - curr_count: :class:`int`
-        The current count
-    Returns
-    =======
-    [
-        - :class:`int`: Evaluation result of expression (if valid), -infinity otherwise,
-        - :class:`bool`: Whether the expression evaluates to current_count + 1
-    ]
-    """
+
     # Disregard expressions with letters
     if any(char.isalpha() for char in exp):
         return [float("-inf"), False]
@@ -117,6 +104,8 @@ async def on_ready():
     # Update JSON file
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
+  # Change bot status
+    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water"))
     return
 
 
