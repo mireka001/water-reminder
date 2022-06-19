@@ -85,6 +85,24 @@ async def on_message(message):
        await message.delete() 
 '''
 
+   incorrect_emoji = "<:circuitredheart:984392507515363338>"
+def evaluate(exp, curr_count):
+    """
+    Safely evaluates the mathematical expression in the message.
+    Parameters
+    ==========
+    - exp: :class:`str`
+        Expression to be verified
+    - curr_count: :class:`int`
+        The current count
+    Returns
+    =======
+    [
+        - :class:`int`: Evaluation result of expression (if valid), -infinity otherwise,
+        - :class:`bool`: Whether the expression evaluates to current_count + 1
+    ]
+    """
+    # Disregard expressions with letters
     if any(char.isalpha() for char in exp):
         return [float("-inf"), False]
     # Replace exponentiation, multiplication and division signs with Pythonic equivalents
@@ -96,7 +114,6 @@ async def on_message(message):
         return [float("-inf"), False]
     # Check if current expression evaluates to 1 more than curr_count
     return [result, result == curr_count + 1]
-
 client = discord.Client()
 @client.event
 async def on_ready():
