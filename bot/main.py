@@ -12,8 +12,8 @@ client = discord.Client()
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.watching, name="if you're drinking water!")) 
-target_channel_id = 860564834553692162, 938487387804286999
-general_channel_id = 938487387804286999
+target_channel_id = 860564834553692162, 938487387804286999, 987873257342521460
+general_channel_id = 987873257342521460
 @client.event
 async def on_message(message):
     if message.author == client.user:
