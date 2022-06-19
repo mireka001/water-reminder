@@ -171,8 +171,7 @@ async def on_ready():
     # Update JSON file
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
-    # Change bot status
-    await client.change_presence(status=discord.Status.idle, activity=discord.Activity(type=discord.ActivityType.listening, name="Tailwhip"))
+
     # Confirmation message
     print('Logged in')
     """ mit = client.get_guild(748634368037355524)
