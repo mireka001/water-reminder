@@ -6,7 +6,7 @@ import time
 
 
 
-bot = commands.Bot('$')
+bot = commands.Bot('!')
 client = discord.Client()
 
 @client.event
@@ -70,23 +70,8 @@ async def on_message(message):
 
 
 
-incorrect_emoji = "<:circuitredheart:984392507515363338>"
+incorrect_emoji = "<:redheart:987880814983380993>"
 def evaluate(exp, curr_count):
-    """
-    Safely evaluates the mathematical expression in the message.
-    Parameters
-    ==========
-    - exp: :class:`str`
-        Expression to be verified
-    - curr_count: :class:`int`
-        The current count
-    Returns
-    =======
-    [
-        - :class:`int`: Evaluation result of expression (if valid), -infinity otherwise,
-        - :class:`bool`: Whether the expression evaluates to current_count + 1
-    ]
-    """
     # Disregard expressions with letters
     if any(char.isalpha() for char in exp):
         return [float("-inf"), False]
@@ -156,15 +141,6 @@ async def on_ready():
     # Update JSON file
     with open(filename, "w", encoding="utf-8") as file2:
         json.dump(data, file2, indent=4)
-   
-    # Confirmation message
-    print('Logged in')
-    """ mit = client.get_guild(748634368037355524)
-    try:
-        await mit.leave()
-        print("Left MIT hehe")
-    except Exception:
-        print("No leave") """
     return
 @client.event
 async def on_message(message):
@@ -188,16 +164,16 @@ async def on_message(message):
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:test:987874867128975400>",                             # 1, correct
-                      "<:dhrblush:959494939182497812>",                         # 2, 69
+                      "<:greenheart:987880415605977110>",                       # 1, correct
+                      "<<:yellowheart:987880816082300968>",                         # 2, 69
                       "<:circuitblueheart:984392508333248523>",                 # 3, every 10 under 100
-                      "<a:dhrkirbybouncing:963454587757559908>"                 # 4, every 100 under 1000
+                      "<:orangeheart:987880814652063774> "                 # 4, every 100 under 1000
                       ]
         # List of forbidden start/end characters
         char_arr = ["~", "`", ".", ",", "!", "@", "#", "$", "%", "^", "&", ":", ";", "/", "\\",
                     "*", "(", ")", "<", ">", "?", "{", "}", "[", "]", "\"", "'", "|", "_", "="]
         # See stats using tailwhip!user <@user>; user parameter is optional
-        if message.content.startswith('!countstats'):
+        if message.content.startswith('$countstats'):
             # Determine whose stats to analyse
             u_id = ""
             msg_arr = message.content.split()
@@ -237,7 +213,7 @@ async def on_message(message):
                                     count_correct += 1
             ct_str = f"• Total counts from <@{u_id}>: {count_total}"
             cc_str = f"• Correct counts from <@{u_id}>: {count_correct}"
-            sc_str = "have fun <a:ayellowhart:957115698327482428>"
+            sc_str = "have fun <:yellowheart:987880816082300968>"
             embed_m = discord.Embed()
             # Special case: user has never counted (avoiding ZeroDivisionError)
             if count_total == 0:
@@ -247,7 +223,7 @@ async def on_message(message):
                 ca_str = f"• Counting accuracy of <@{u_id}>: {round(count_correct / count_total * 100, 5)}%"
                 stats_arr = [ct_str, cc_str, ca_str]
             embed_m.add_field(
-                name="<a:dhrkirby:961019164242370652> Counting stats <a:dhrkirby:961019164242370652>",
+                name="<:redheart:987880814983380993> Counting stats <:redheart:987880814983380993>",
                 value="\n".join(stats_arr))
             await message.channel.send(embed=embed_m)
         else:
