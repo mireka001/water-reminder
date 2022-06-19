@@ -35,11 +35,11 @@ called_every_three_hours.start()
 async def on_message(message):
     if message.author == bot.user:
         return
-    if message.content.lower().strip().startswith('$agua'):
+    if message.content.lower().strip().startswith('!agua'):
         await message.channel.send('Tomen aguita cabros <3')
         time.sleep(2)
         await message.delete()
-    if message.content.lower().strip().startswith('$testingembed'):
+    if message.content.lower().strip().startswith('!testingembed'):
         await message.channel.send('this command *should* delete')
         time.sleep(2)
         await message.delete()
