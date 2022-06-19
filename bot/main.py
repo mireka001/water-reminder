@@ -9,8 +9,6 @@ import time
 bot = commands.Bot('$')
 client = discord.Client()
 
-@client.event
-async def on_ready():
 
 target_channel_id = 860564834553692162, 938487387804286999
 general_channel_id = 938487387804286999
