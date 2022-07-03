@@ -10,8 +10,8 @@ bot = commands.Bot('$')
 client = discord.Client()
 
 
-target_channel_id = 860564834553692162, 993288204432199801
-general_channel_id = 993288204432199801
+target_channel_id = 860564834553692162
+general_channel_id = 860564834553692162
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -30,7 +30,7 @@ async def before():
     print("Finished waiting")
 called_every_three_hours.start()
 
-incorrect_emoji = "<:offbutton:639404277391032320>"
+incorrect_emoji = ""
 def evaluate(exp, curr_count):
 
     # Disregard expressions with letters
@@ -133,10 +133,10 @@ async def on_message(message):
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:onbutton:639404261658066965>",                         # 1, correct
-                      "<:POGGERS:716115532365168770>",                          # 2, 69
-                      "<:88888888:639381123482517505>",                         # 3, every 10 under 100
-                      "<:stanleyface:653340215317889044>"                       # 4, every 100 under 1000
+                      "",                         # 1, correct
+                      "",                          # 2, 69
+                      "",                         # 3, every 10 under 100
+                      ""                       # 4, every 100 under 1000
                       ]
         # List of forbidden start/end characters
         char_arr = ["~", "`", ".", ",", "!", "@", "#", "$", "%", "^", "&", ":", ";", "/", "\\",
@@ -182,7 +182,7 @@ async def on_message(message):
                                     count_correct += 1
             ct_str = f"โ€ข Total counts from <@{u_id}>: {count_total}"
             cc_str = f"โ€ข Correct counts from <@{u_id}>: {count_correct}"
-            sc_str = "have fun <a:mheartred:993278713603039294>"
+            sc_str = "have fun"
             embed_m = discord.Embed()
             # Special case: user has never counted (avoiding ZeroDivisionError)
             if count_total == 0:
@@ -192,7 +192,7 @@ async def on_message(message):
                 ca_str = f"โ€ข Counting accuracy of <@{u_id}>: {round(count_correct / count_total * 100, 5)}%"
                 stats_arr = [ct_str, cc_str, ca_str]
             embed_m.add_field(
-                name="<a:mheartred:993278713603039294> Counting stats <a:mheartred:993278713603039294>",
+                name="Counting stats",
                 value="\n".join(stats_arr))
             await message.channel.send(embed=embed_m)
         else:
@@ -228,7 +228,7 @@ async def on_message(message):
                     data["last_user"] = 0
 
                     embed_m = discord.Embed(
-                        colour=0x2347c0, title="<a:mheartred:993278713603039294>`Wrong Count`<a:mheartred:993278713603039294>")
+                        colour=0x2347c0, title="`Wrong Count`")
                     embed_m.set_image(
                         url="https://www.hdnicewallpapers.com/Walls/Normal/Love%20Heart/Awesome_Love_Heart_Sign_in_Water_HD_Wallpapers.jpg")
                     await message.channel.send(embed=embed_m)
