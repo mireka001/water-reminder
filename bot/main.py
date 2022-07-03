@@ -115,35 +115,7 @@ async def on_message(message):
     if message.content.lower().strip().startswith('$agua'):
         await message.channel.send('Tomen aguita cabros <3')
         time.sleep(2)
-        await message.delete()
-
-
-    if message.content.lower().strip().startswith('!circuit1'):
-       embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="Server Information:",
-                         value='-\n\nThis server is a private, friend based community.\n\n Please be respectful of that, and refrain from "spreading" the server.\n\nOur server rules consist of;\n\n**Be respectful.**\n\n**Be kind.**\n\nPlease keep all NSFW content in it\'s **proper channel.**\n\nAny questions, or concerns please reach out to <@961462461763031070>.')
-       embed_m.set_thumbnail(url="https://thumbs.gfycat.com/WhoppingPassionateGalapagospenguin-max-1mb.gif")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete()
- 
-    if message.content.lower().strip().startswith('!circuit2'):
-       embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="Server Roles:",
-                         value='-\n\nThe roles provided, are Pronouns, and Age roles.\n\n*Please be aware that more may be added if needed.*\n\n<@&957540747538751519>\n\n<@&957540790689755256>\n\n<@&957540772398395392>\n\n<@&957540812877611048>\n\n<@&957540851901403166>\n\n<@&957542213905182760>\n\n<@&957542256456396820>')
-       embed_m.set_thumbnail(url="https://media.discordapp.net/attachments/984628727021461504/984632547558436904/ezgif-1-6968916f5b.gif")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete() 
-
-    if message.content.lower().strip().startswith('!circuit3'):
-       embed_m = discord.Embed(colour=0xa3dab5)
-       embed_m.add_field(name="<3",
-                         value='-\n\nbeep boop...\n\n<@&957053492906831945> i hope you all are doing well! please make sure to take care of yourselves. <:circuitgreenheart:984392506013806632>')
-       embed_m.set_thumbnail(url="https://cdn.discordapp.com/emojis/963450818147778570.gif?size=240&quality=lossless")                
-       await message.channel.send(embed=embed_m)
-       time.sleep(2)
-       await message.delete() 
+        await message.delete() 
         
 
         
@@ -210,7 +182,7 @@ async def on_message(message):
                                     count_correct += 1
             ct_str = f"โ€ข Total counts from <@{u_id}>: {count_total}"
             cc_str = f"โ€ข Correct counts from <@{u_id}>: {count_correct}"
-            sc_str = "have fun <:redheart:987880814983380993>"
+            sc_str = "have fun <a:mheartred:993278713603039294>"
             embed_m = discord.Embed()
             # Special case: user has never counted (avoiding ZeroDivisionError)
             if count_total == 0:
@@ -220,7 +192,7 @@ async def on_message(message):
                 ca_str = f"โ€ข Counting accuracy of <@{u_id}>: {round(count_correct / count_total * 100, 5)}%"
                 stats_arr = [ct_str, cc_str, ca_str]
             embed_m.add_field(
-                name="<:redheart:987880814983380993> Counting stats <:redheart:987880814983380993>",
+                name="<a:mheartred:993278713603039294> Counting stats <a:mheartred:993278713603039294>",
                 value="\n".join(stats_arr))
             await message.channel.send(embed=embed_m)
         else:
