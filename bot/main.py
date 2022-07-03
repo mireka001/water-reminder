@@ -10,8 +10,8 @@ bot = commands.Bot('$')
 client = discord.Client()
 
 
-target_channel_id = 860564834553692162, 938487387804286999
-general_channel_id = 938487387804286999
+target_channel_id = 860564834553692162, 993288204432199801
+general_channel_id = 993288204432199801
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -30,7 +30,7 @@ async def before():
     print("Finished waiting")
 called_every_three_hours.start()
 
-incorrect_emoji = "<:redheart:987880814983380993>"
+incorrect_emoji = "<:offbutton:639404277391032320>"
 def evaluate(exp, curr_count):
 
     # Disregard expressions with letters
@@ -161,10 +161,10 @@ async def on_message(message):
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "<:greenheart:987880415605977110>",                       # 1, correct
-                      "<:orangeheart:987880814652063774>",                      # 2, 69
-                      "<:yellowheart:987880816082300968> ",                     # 3, every 10 under 100
-                      "<:orangeheart:987880814652063774>"                       # 4, every 100 under 1000
+                      "<:onbutton:639404261658066965>",                         # 1, correct
+                      "<:POGGERS:716115532365168770>",                          # 2, 69
+                      "<:88888888:639381123482517505>",                         # 3, every 10 under 100
+                      "<:stanleyface:653340215317889044>"                       # 4, every 100 under 1000
                       ]
         # List of forbidden start/end characters
         char_arr = ["~", "`", ".", ",", "!", "@", "#", "$", "%", "^", "&", ":", ";", "/", "\\",
@@ -256,7 +256,7 @@ async def on_message(message):
                     data["last_user"] = 0
 
                     embed_m = discord.Embed(
-                        colour=0x2347c0, title="<:blueheart:987887292859449395>`Wrong Count`<:blueheart:987887292859449395>\n\n*Continúe con el número; 1.*")
+                        colour=0x2347c0, title="<a:mheartred:993278713603039294>`Wrong Count`<a:mheartred:993278713603039294>")
                     embed_m.set_image(
                         url="https://www.hdnicewallpapers.com/Walls/Normal/Love%20Heart/Awesome_Love_Heart_Sign_in_Water_HD_Wallpapers.jpg")
                     await message.channel.send(embed=embed_m)
