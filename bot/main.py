@@ -30,7 +30,7 @@ async def before():
     print("Finished waiting")
 called_every_three_hours.start()
 
-incorrect_emoji = ""
+incorrect_emoji = "https://cdn.discordapp.com/emojis/995873221482139750.webp?size=96&quality=lossless"
 def evaluate(exp, curr_count):
 
     # Disregard expressions with letters
@@ -133,8 +133,8 @@ async def on_message(message):
     if message.channel.id == int(os.getenv("CHANNEL_ID")):
         # List of possible reactions
         emoji_list = [incorrect_emoji,                                          # 0, incorrect
-                      "",                         # 1, correct
-                      "",                          # 2, 69
+                      "https://cdn.discordapp.com/emojis/995872944326713344.webp?size=32&quality=lossless",                         # 1, correct
+                      "https://cdn.discordapp.com/emojis/995873451736825926.webp?size=96&quality=lossless",                          # 2, 69
                       "",                         # 3, every 10 under 100
                       ""                       # 4, every 100 under 1000
                       ]
