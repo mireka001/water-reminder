@@ -17,7 +17,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 #embed(s):
-@tasks.loop(hours=3)
+@tasks.loop(seconds = 10)
 async def called_every_three_hours():
     message_channel = bot.get_channel(general_channel_id)
     print(f"Got channel {message_channel}")
