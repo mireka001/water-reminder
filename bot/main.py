@@ -10,8 +10,8 @@ bot = commands.Bot('$')
 client = discord.Client()
 
 
-target_channel_id = 860564834553692162
-general_channel_id = 860564834553692162
+target_channel_id = 701468290047934536
+general_channel_id = 701468290047934536
 @client.event
 async def on_message(message):
     if message.author == client.user:
